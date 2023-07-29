@@ -57,11 +57,7 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 		addOption(option);
 
 		#if desktop
-		var option:Option = new Option('Auto Pause',
-			"If checked, the game will automatically freeze itself when not in focus.",
-			'autoPause',
-			'bool',
-			true);
+		var option:Option = new Option('Auto Pause', "If checked, the game will automatically freeze itself when not in focus.", 'autoPause', 'bool', true);
 		addOption(option);
 
 		option.onChange = onToggleAutoPause;
