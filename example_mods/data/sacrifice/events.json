@@ -1,0 +1,39 @@
+{
+	"song": {
+		"speed": 2.1,
+		"stage": "whitt",
+		"player1": "bf",
+		"player2": "foxa",
+		"player3": null,
+		"events": [
+			[
+				64000,
+				[
+					[
+						"Change Character",
+						"dad",
+						"Sad-Foxa"
+					]
+				]
+			],
+			[
+				75000,
+				[
+					[
+						"Opponent Fade",
+						"0.8",
+						"70"
+					]
+				]
+			]
+		],
+		"notes": [],
+		"splashSkin": null,
+		"validScore": false,
+		"gfVersion": "Gf-whit",
+		"bpm": 120,
+		"arrowSkin": null,
+		"needsVoices": true,
+		"song": "Sacrifice"
+	}
+}

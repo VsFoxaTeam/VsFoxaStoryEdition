@@ -1,0 +1,40 @@
+{
+	"storyName": "foxa's lesson with whitty",
+	"difficulties": "",
+	"hideFreeplay": false,
+	"weekBackground": "whitty",
+	"weekBefore": "tutorial",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"startUnlocked": true,
+	"hideStoryMode": false,
+	"songs": [
+		[
+			"Lesson-lo-fight",
+			"HappyWhitty",
+			[
+				186,
+				153,
+				135
+			]
+		],
+		[
+			"lesson-overhead",
+			"HappyWhitty",
+			[
+				186,
+				153,
+				135
+			]
+		]
+	],
+	"weekCharacters": [
+		"whittyremixed",
+		"fox",
+		""
+	],
+	"weekName": "Custom Week"
+}

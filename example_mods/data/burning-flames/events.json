@@ -1,0 +1,64 @@
+{
+	"song": {
+		"speed": 2.5,
+		"stage": "whitt",
+		"player1": "bf",
+		"player2": "foxa-angy",
+		"player3": null,
+		"events": [
+			[
+				28000,
+				[
+					[
+						"Change Character",
+						"1",
+						"foxa-with-whitty"
+					]
+				]
+			],
+			[
+				32000,
+				[
+					[
+						"Change Character",
+						"1",
+						"foxa-angy"
+					]
+				]
+			],
+			[
+				59333.3333333334,
+				[
+					[
+						"Change Character",
+						"1",
+						"foxa-pissed"
+					],
+					[
+						"Blammed Lights",
+						"4",
+						""
+					]
+				]
+			],
+			[
+				67916.6666666667,
+				[
+					[
+						"Blammed Lights",
+						"0",
+						""
+					]
+				]
+			]
+		],
+		"notes": [],
+		"splashSkin": null,
+		"validScore": false,
+		"gfVersion": "Gf-whit",
+		"bpm": 180,
+		"arrowSkin": "",
+		"needsVoices": true,
+		"song": "Burning-Flames"
+	}
+}

@@ -1,0 +1,39 @@
+{
+	"song": {
+		"speed": 2.6,
+		"stage": "MadAlley",
+		"player1": "bf-scared",
+		"player2": "remixedwhittycrazy",
+		"player3": null,
+		"events": [
+			[
+				57000,
+				[
+					[
+						"Hey!",
+						"0",
+						""
+					]
+				]
+			],
+			[
+				93571.4285714287,
+				[
+					[
+						"Hey!",
+						"0",
+						""
+					]
+				]
+			]
+		],
+		"notes": [],
+		"splashSkin": " ",
+		"validScore": false,
+		"gfVersion": "Gf-whit",
+		"bpm": 210,
+		"arrowSkin": null,
+		"needsVoices": true,
+		"song": "Ballistic"
+	}
+}

@@ -1,0 +1,31 @@
+{
+	"songs": [
+		[
+			"remorse",
+			"Updike",
+			[
+				126,
+				115,
+				115
+			]
+		]
+	],
+	"hideFreeplay": false,
+	"weekBackground": "",
+	"difficulties": "",
+	"weekCharacters": [
+		"",
+		"fox",
+		""
+	],
+	"storyName": "remorse",
+	"weekName": "Custom Week",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"hideStoryMode": true,
+	"weekBefore": "tutorial",
+	"startUnlocked": true
+}

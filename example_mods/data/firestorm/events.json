@@ -1,0 +1,59 @@
+{
+	"song": {
+		"speed": 3,
+		"stage": "ballist",
+		"player1": "bf-scared",
+		"player2": "foxa-mad",
+		"player3": null,
+		"events": [
+			[
+				71025,
+				[
+					[
+						"Change Character",
+						"1",
+						"Foxa_mad_whitty"
+					]
+				]
+			],
+			[
+				73350,
+				[
+					[
+						"Change Character",
+						"1",
+						"Foxa-mad"
+					]
+				]
+			],
+			[
+				113700,
+				[
+					[
+						"Change Character",
+						"1",
+						"Foxa_mad_whitty"
+					]
+				]
+			],
+			[
+				115875,
+				[
+					[
+						"Change Character",
+						"1",
+						"foxa-mad"
+					]
+				]
+			]
+		],
+		"notes": [],
+		"splashSkin": null,
+		"validScore": false,
+		"gfVersion": "Gf-whit",
+		"bpm": 200,
+		"arrowSkin": null,
+		"needsVoices": true,
+		"song": "Firestorm"
+	}
+}

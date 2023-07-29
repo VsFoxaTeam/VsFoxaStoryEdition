@@ -1,0 +1,49 @@
+{
+	"song": {
+		"speed": 1.9,
+		"stage": "facility",
+		"player1": "remorse-foxa",
+		"player2": "updike",
+		"player3": null,
+		"events": [
+			[
+				112000,
+				[
+					[
+						"Change Character",
+						"1",
+						"static-updike"
+					],
+					[
+						"Blammed Lights",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				128000,
+				[
+					[
+						"Change Character",
+						"1",
+						"updike"
+					],
+					[
+						"Blammed Lights",
+						"0",
+						""
+					]
+				]
+			]
+		],
+		"notes": [],
+		"splashSkin": null,
+		"validScore": false,
+		"gfVersion": "invisible",
+		"bpm": 120,
+		"arrowSkin": null,
+		"needsVoices": true,
+		"song": "Remorse"
+	}
+}

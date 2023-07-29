@@ -1,0 +1,40 @@
+{
+	"storyName": "detonator",
+	"difficulties": "",
+	"hideFreeplay": false,
+	"weekBackground": "whitty",
+	"weekBefore": "tutorial",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"startUnlocked": true,
+	"hideStoryMode": true,
+	"songs": [
+		[
+			"detonator",
+			"foxa",
+			[
+				255,
+				133,
+				133
+			]
+		],
+		[
+			"angy-fox",
+			"foxa",
+			[
+				146,
+				113,
+				253
+			]
+		]
+	],
+	"weekCharacters": [
+		"fox",
+		"bf",
+		"gf"
+	],
+	"weekName": "Custom Week"
+}

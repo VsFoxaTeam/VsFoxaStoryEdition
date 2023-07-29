@@ -1,0 +1,49 @@
+{
+	"storyName": "BACK alley blitz",
+	"difficulties": "",
+	"hideFreeplay": false,
+	"weekBackground": "whitty",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"weekBefore": "",
+	"startUnlocked": true,
+	"weekCharacters": [
+		"Whittyremixed",
+		"bf",
+		"gf"
+	],
+	"songs": [
+		[
+			"lo-fight",
+			"Whitty",
+			[
+				255,
+				113,
+				55
+			]
+		],
+		[
+			"overhead",
+			"Whitty",
+			[
+				255,
+				73,
+				55
+			]
+		],
+		[
+			"ballistic",
+			"BallisticWhitty",
+			[
+				115,
+				33,
+				55
+			]
+		]
+	],
+	"hideStoryMode": false,
+	"weekName": "Custom Week"
+}
