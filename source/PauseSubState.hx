@@ -152,6 +152,10 @@ class PauseSubState extends MusicBeatSubstate
 		{
 			changeSelection(1);
 		}
+		if (FlxG.mouse.wheel != 0)
+		{
+			changeSelection(-FlxG.mouse.wheel);
+		}
 
 		if (accepted)
 		{

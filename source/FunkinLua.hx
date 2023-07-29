@@ -270,7 +270,6 @@ class FunkinLua
 			luaTrace("Script doesn't exist!");
 		});
 
-
 		Lua_helper.add_callback(lua, "loadSong", function(?name:String = null, ?difficultyNum:Int = -1) // i love dave and bambi EXPUNGED PEAK
 		{
 			if (name == null || name.length < 1)
@@ -1535,6 +1534,68 @@ class FunkinLua
 			}
 			return 0;
 		});
+
+		// String tools
+		Lua_helper.add_callback(lua, "stringStartsWith", function(str:String, start:String)
+		{
+			return str.startsWith(start);
+		});
+		Lua_helper.add_callback(lua, "stringEndsWith", function(str:String, end:String)
+		{
+			return str.endsWith(end);
+		});
+		Lua_helper.add_callback(lua, "stringSplit", function(str:String, split:String)
+		{
+			return str.split(split);
+		});
+		Lua_helper.add_callback(lua, "stringTrim", function(str:String)
+		{
+			return str.trim();
+		});
+
+		// Regex
+		Lua_helper.add_callback(lua, "regexMatch", function(str:String, toMatch:String, flag:String = "i")
+		{
+			return new EReg(str, flag).match(toMatch);
+		});
+		Lua_helper.add_callback(lua, "regexSubMatch", function(str:String, toMatch:String, pos:Int, len:Int = -1, flag:String = "i")
+		{
+			return new EReg(str, flag).matchSub(toMatch, pos, len);
+		});
+		Lua_helper.add_callback(lua, "regexFindMatchAt", function(str:String, toMatch:String, n:Int, flag:String = "i")
+		{
+			var theData = new EReg(str, flag);
+			theData.match(toMatch);
+			return theData.matched(n);
+		});
+		Lua_helper.add_callback(lua, "regexFindFirstMatch", function(str:String, toMatch:String, flag:String = "i")
+		{
+			var theData = new EReg(str, flag);
+			theData.match(toMatch);
+			return theData.matchedLeft();
+		});
+		Lua_helper.add_callback(lua, "regexFindLastMatch", function(str:String, toMatch:String, flag:String = "i")
+		{
+			var theData = new EReg(str, flag);
+			theData.match(toMatch);
+			return theData.matchedRight();
+		});
+		Lua_helper.add_callback(lua, "regexMatchPosition", function(str:String, toMatch:String, flag:String = "i")
+		{
+			var data = new EReg(str, flag);
+			data.match(toMatch);
+			var theData = data.matchedPos();
+			return [theData.pos, theData.len];
+		});
+		Lua_helper.add_callback(lua, "regexReplace", function(str:String, toReplace:String, replacement:String, flag:String = "i")
+		{
+			return new EReg(str, flag).replace(toReplace, replacement);
+		});
+		Lua_helper.add_callback(lua, "regexSplit", function(str:String, toSplit:String, flag:String = "i")
+		{
+			return new EReg(str, flag).split(toSplit);
+		});
+
 		Lua_helper.add_callback(lua, "getRandomInt", function(min:Int, max:Int = FlxMath.MAX_VALUE_INT, exclude:String = '')
 		{
 			var excludeArray:Array<String> = exclude.split(',');
