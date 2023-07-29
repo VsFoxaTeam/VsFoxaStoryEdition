@@ -358,7 +358,7 @@ class AttachedAchievement extends FlxSprite
 	{
 		if (Achievements.isAchievementUnlocked(tag))
 		{
-			var imagePath:FlxGraphic = Paths.image('achievementgrid');
+			var imagePath:FlxGraphic = Paths.image('achievements/' + tag);
 			var isModIcon:Bool = false;
 
 			if (Achievements.loadedAchievements.exists(tag))
@@ -419,7 +419,7 @@ class AchievementObject extends FlxSpriteGroup
 		var achievementBG:FlxSprite = new FlxSprite(60, 50).makeGraphic(420, 120, FlxColor.BLACK);
 		achievementBG.scrollFactor.set();
 
-		var imagePath = Paths.image('achievementgrid');
+		var imagePath = Paths.image('achievements/' + tag);
 		var modsImage = null;
 		var isModIcon:Bool = false;
 
