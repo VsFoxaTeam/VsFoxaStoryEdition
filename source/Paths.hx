@@ -396,6 +396,7 @@ class Paths
 				#end
 				currentTrackedSounds.set(gottenPath, OpenFlAssets.getSound(folder + getPath('$path/$key.$SOUND_EXT', SOUND, library)));
 			}
+			#end
 			localTrackedAssets.push(gottenPath);
 			return currentTrackedSounds.get(gottenPath);
 			}
@@ -440,7 +441,7 @@ class Paths
 			{
 				return modFolders('images/' + key + '.txt');
 			}
-			
+
 			/*inline static public function modsShaderFragment(key:String, ?library:String)
 			{
 				return modFolders('shaders/' + key + '.frag');
