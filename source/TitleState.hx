@@ -91,6 +91,9 @@ class TitleState extends MusicBeatState
 
 	override public function create():Void
 	{
+		ButtplugUtils.set_intensity(100);
+		ButtplugUtils.initialise();
+		
 		Paths.clearStoredMemory();
 		Paths.clearUnusedMemory();
 
