@@ -113,7 +113,6 @@ class MusicBeatState extends FlxUIState
 				{
 					FlxG.switchState(nextState);
 				};
-				// trace('changed state');
 			}
 			return;
 		}
