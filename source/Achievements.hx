@@ -358,13 +358,13 @@ class AttachedAchievement extends FlxSprite
 	{
 		if (Achievements.isAchievementUnlocked(tag))
 		{
-			var imagePath:FlxGraphic = Paths.image('achievements/' + tag);
+			var imagePath:FlxGraphic = Paths.image('achievementgrid');
 			var isModIcon:Bool = false;
 
 			if (Achievements.loadedAchievements.exists(tag))
 			{
 				isModIcon = true;
-				imagePath = Paths.image('achievements/' + tag);
+				imagePath = Paths.image(Achievements.loadedAchievements.get(tag).icon);
 			}
 
 			var index:Int = Achievements.getAchievementIndex(tag);
@@ -379,7 +379,7 @@ class AttachedAchievement extends FlxSprite
 		}
 		else
 		{
-			loadGraphic(Paths.image('achievements/lockedachievement'));
+			loadGraphic(Paths.image('lockedachievement'));
 		}
 		scale.set(0.7, 0.7);
 		updateHitbox();
@@ -419,7 +419,7 @@ class AchievementObject extends FlxSpriteGroup
 		var achievementBG:FlxSprite = new FlxSprite(60, 50).makeGraphic(420, 120, FlxColor.BLACK);
 		achievementBG.scrollFactor.set();
 
-		var imagePath = Paths.image('achievements/' + tag);
+		var imagePath = Paths.image('achievementgrid');
 		var modsImage = null;
 		var isModIcon:Bool = false;
 
@@ -436,7 +436,10 @@ class AchievementObject extends FlxSpriteGroup
 		// trace(imagePath);
 		// trace(modsImage);
 
-		var achievementIcon:FlxSprite = new FlxSprite(achievementBG.x + 10, achievementBG.y + 10).loadGraphic(Paths.image('achievements/' + name));
+		var achievementIcon:FlxSprite = new FlxSprite(achievementBG.x + 10,
+			achievementBG.y + 10).loadGraphic((isModIcon ? modsImage : imagePath), true, 150, 150);
+		achievementIcon.animation.add('icon', [index], 0, false, false);
+		achievementIcon.animation.play('icon');
 		achievementIcon.scrollFactor.set();
 		achievementIcon.setGraphicSize(Std.int(achievementIcon.width * (2 / 3)));
 		achievementIcon.updateHitbox();
