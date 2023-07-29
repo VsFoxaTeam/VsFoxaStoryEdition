@@ -34,6 +34,7 @@ class ClientPrefs
 	public static var controllerMode:Bool = false;
 	public static var screenRes:String = '1280x720';
 	public static var fullscreen:Bool = false;
+	public static var colorBlindFilter:String = 'None';
 	public static var gameplaySettings:Map<String, Dynamic> = [
 		'scrollspeed' => 1.0,
 		'scrolltype' => 'multiplicative',
@@ -131,6 +132,8 @@ class ClientPrefs
 		FlxG.save.data.screenRes = screenRes;
 		FlxG.save.data.fullscreen = fullscreen;
 
+		FlxG.save.data.colorBlindFilter = colorBlindFilter;
+
 		FlxG.save.flush();
 
 		var save:FlxSave = new FlxSave();
@@ -153,7 +156,8 @@ class ClientPrefs
 			middleScroll = FlxG.save.data.middleScroll;
 		}
 		#if desktop
-		if(FlxG.save.data.autoPause != null) {
+		if (FlxG.save.data.autoPause != null)
+		{
 			autoPause = FlxG.save.data.autoPause;
 		}
 		#end
@@ -274,6 +278,10 @@ class ClientPrefs
 		{
 			fullscreen = FlxG.save.data.fullscreen;
 			FlxG.fullscreen = fullscreen;
+		}
+		if (FlxG.save.data.colorBlindFilter != null)
+		{
+			colorBlindFilter = FlxG.save.data.colorBlindFilter;
 		}
 		if (FlxG.save.data.gameplaySettings != null)
 		{
