@@ -16,21 +16,21 @@
 		},
 		{
 			"expression": "talk",
-			"text": " sorry if i startled you. ",
+			"text": "Sorry if i startled you. ",
 			"boxState": "normal",
 			"portrait": "Happyfox",
 			"speed": 0.05
 		},
 		{
 			"expression": "talk",
-			"text": "Oh. um...",
+			"text": "Oh, uhh...",
 			"boxState": "normal",
 			"portrait": "FlushedWhit",
 			"speed": 0.05
 		},
 		{
 			"expression": "talk",
-			"text": "It's fine i guess. ",
+			"text": "It's fine, I guess. ",
 			"boxState": "normal",
 			"portrait": "FlushedWhit2",
 			"speed": 0.05
@@ -51,7 +51,7 @@
 		},
 		{
 			"expression": "talk",
-			"text": " There's something i would like to ask you.",
+			"text": " There's something I would like to ask you.",
 			"boxState": "normal",
 			"portrait": "HappyTalk",
 			"speed": 0.05
@@ -72,7 +72,7 @@
 		},
 		{
 			"expression": "talk",
-			"text": "you see, i was wondering if you could teach me how to sing.",
+			"text": "You see, I was wondering if you could teach me how to sing.",
 			"boxState": "normal",
 			"portrait": "Happytalk",
 			"speed": 0.05
@@ -93,28 +93,28 @@
 		},
 		{
 			"expression": "talk",
-			"text": "I mean, i am an EX-rockstar...",
+			"text": "I mean, I am an EX-rockstar...",
 			"boxState": "normal",
 			"portrait": "FlushedWhit2",
 			"speed": 0.05
 		},
 		{
 			"expression": "talk",
-			"text": " But I might not be as good as I used to be... ",
+			"text": "But I might not be as good as I used to be... ",
 			"boxState": "normal",
 			"portrait": "FlushedWhit",
 			"speed": 0.05
 		},
 		{
 			"expression": "talk",
-			"text": "Oh, i'm sure you are!",
+			"text": "Oh, I'm sure you are!",
 			"boxState": "normal",
 			"portrait": "GleeFox",
 			"speed": 0.05
 		},
 		{
 			"expression": "talk",
-			"text": "C'mon, Whit...",
+			"text": "C'mon, Whitty...",
 			"boxState": "normal",
 			"portrait": "HappyFox",
 			"speed": 0.05
@@ -135,7 +135,7 @@
 		},
 		{
 			"expression": "talk",
-			"text": "...I suppose I could try. ",
+			"text": "...I suppose I could try.",
 			"boxState": "normal",
 			"portrait": "FlushedWhit2",
 			"speed": 0.05
@@ -149,7 +149,7 @@
 		},
 		{
 			"expression": "talk",
-			"text": "Yeah. ",
+			"text": "Yeah.",
 			"boxState": "normal",
 			"portrait": "FlushedWhit",
 			"speed": 0.075
@@ -166,7 +166,7 @@
 			"portrait": "GleeFox",
 			"boxState": "normal",
 			"expression": "talk",
-			"text": "I'll do my best, Whit!"
+			"text": "I'll do my best, Whitty!"
 		}
 	]
 }

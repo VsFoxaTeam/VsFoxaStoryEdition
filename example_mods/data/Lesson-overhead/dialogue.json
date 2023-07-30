@@ -19,14 +19,14 @@
 			"portrait": "HappyWhit",
 			"boxState": "normal",
 			"expression": "talk",
-			"text": "yeah, nice job. "
+			"text": "Yeah, nice job. "
 		},
 		{
 			"speed": 0.05,
 			"portrait": "happyfox",
 			"boxState": "normal",
 			"expression": "pissed",
-			"text": "could we do another? "
+			"text": "Could we do another? "
 		},
 		{
 			"speed": 0.05,
@@ -40,14 +40,14 @@
 			"portrait": "Flushedwhit2",
 			"boxState": "normal",
 			"expression": "talk",
-			"text": "another one?"
+			"text": "Another one?"
 		},
 		{
 			"speed": 0.05,
 			"portrait": "gleefox",
 			"boxState": "normal",
 			"expression": "talk",
-			"text": "Yeah! It might be fun, and i could learn more!"
+			"text": "Yeah! It might be fun, and iI could learn more!"
 		},
 		{
 			"speed": 0.195,
@@ -61,21 +61,21 @@
 			"portrait": "gleefox",
 			"boxState": "normal",
 			"expression": "talk",
-			"text": "you might like it! "
+			"text": "You might like it! "
 		},
 		{
 			"speed": 0.05,
 			"portrait": "FlushedWhit2",
 			"boxState": "normal",
 			"expression": "talk",
-			"text": "...Ah whatever."
+			"text": "...Ah, whatever."
 		},
 		{
 			"speed": 0.05,
 			"portrait": "Flushedwhit",
 			"boxState": "normal",
 			"expression": "talk",
-			"text": "Fine. "
+			"text": "Fine."
 		},
 		{
 			"speed": 0.05,

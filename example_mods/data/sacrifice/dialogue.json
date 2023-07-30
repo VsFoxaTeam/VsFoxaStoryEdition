@@ -33,32 +33,32 @@
 			"text": "No.",
 			"boxState": "normal",
 			"speed": 0.05,
-			"portrait": "bf"
+			"portrait": "gf"
 		},
 		{
 			"expression": "talk",
-			"text": "Well, He's dangerous. ",
+			"text": "Well, he's dangerous. ",
 			"boxState": "normal",
 			"speed": 0.05,
 			"portrait": "port"
 		},
 		{
 			"expression": "talk",
-			"text": "When he gets angry, his fuse lights up, which obviously means he's not too far from going Kaboom.",
+			"text": "When he gets angry, his fuse lights up, which obviously means he's not too far from going KABOOM.",
 			"boxState": "normal",
 			"speed": 0.05,
 			"portrait": "port"
 		},
 		{
 			"expression": "talk",
-			"text": "If he explodes, yes, he can regenerate\\naccording to what he told me in the past.\\nBut...",
+			"text": "If he explodes, yes, he can regenerate\\naccording to what he told me in the past,\\nbut...",
 			"boxState": "normal",
 			"speed": 0.05,
 			"portrait": "port"
 		},
 		{
 			"expression": "talk",
-			"text": "He can still cause damage to the things around him and kill people. Updike would have killed him and I both by now If I didn't say anything.",
+			"text": "He can still cause damage to the things around him and kill people. Updike would have killed him and I both by now if I didn't say anything.",
 			"boxState": "normal",
 			"speed": 0.05,
 			"portrait": "port"
@@ -68,7 +68,7 @@
 			"text": "You understand that, right?",
 			"boxState": "normal",
 			"speed": 0.05,
-			"portrait": "Port"
+			"portrait": "port"
 		},
 		{
 			"expression": "talk",
@@ -110,7 +110,7 @@
 			"text": "And what was that promise?",
 			"boxState": "normal",
 			"speed": 0.05,
-			"portrait": "bf"
+			"portrait": "gf"
 		},
 		{
 			"expression": "talk",
