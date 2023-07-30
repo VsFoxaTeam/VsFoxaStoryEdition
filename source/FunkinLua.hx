@@ -4,6 +4,7 @@ import llua.LuaL;
 import llua.State;
 import llua.Convert;
 #end
+import haxe.Json;
 import animateatlas.AtlasFrameMaker;
 import flixel.FlxG;
 import flixel.addons.effects.FlxTrail;
@@ -29,6 +30,7 @@ import flixel.math.FlxMath;
 import flixel.util.FlxSave;
 import Shaders;
 import flixel.addons.transition.FlxTransitionableState;
+import flixel.system.FlxAssets.FlxShader;
 #if sys
 import sys.FileSystem;
 import sys.io.File;
@@ -36,6 +38,10 @@ import sys.io.File;
 import Type.ValueType;
 import Controls;
 import DialogueBoxPsych;
+#if hscript
+import hscript.Parser;
+import hscript.Interp;
+#end
 #if desktop
 import Discord;
 #end
@@ -52,6 +58,12 @@ class FunkinLua
 	#end
 	public var camTarget:FlxCamera;
 	public var scriptName:String = '';
+
+	public var variables:Map<String, Dynamic> = [];
+
+	#if hscript
+	public static var haxeInterp:Interp = null;
+	#end
 
 	var gonnaClose:Bool = false;
 
@@ -268,6 +280,86 @@ class FunkinLua
 				return;
 			}
 			luaTrace("Script doesn't exist!");
+		});
+
+		// hi cherif =)
+		Lua_helper.add_callback(lua, "setVariable", function(variable:String, value:Dynamic, ?theScript:String)
+		{
+			theScript = (theScript == null ? scriptName : theScript);
+			if (theScript == scriptName)
+				variables.set(variable, value);
+			else
+			{
+				for (luaInstance in PlayState.instance.luaArray)
+				{
+					var nom:Array<String> = luaInstance.scriptName.split('/');
+					if (nom[nom.length - 1].substr(0, -".lua".length) == theScript)
+						luaInstance.variables.set(variable, value);
+				}
+			}
+			return true;
+		});
+		Lua_helper.add_callback(lua, "getVariable", function(variable:String, ?theScript:String)
+		{
+			var luaScript:FunkinLua = this;
+
+			if (theScript != null)
+			{
+				for (luaInstance in PlayState.instance.luaArray)
+				{
+					var nom:Array<String> = luaInstance.scriptName.split('/');
+					if (nom[nom.length - 1].substr(0, -".lua".length) == theScript)
+						luaScript = luaInstance;
+				}
+			}
+			if (luaScript.variables.exists(variable))
+				return luaScript.variables.get(variable);
+			else
+				luaTrace('getVariable: Variable (' + variable + ') does not exist', false, false);
+			return null;
+		});
+
+		Lua_helper.add_callback(lua, "runHaxeCode", function(codeToRun:String)
+		{
+			#if hscript
+			initHaxeInterp();
+
+			try
+			{
+				var myFunction:Dynamic = haxeInterp.expr(new Parser().parseString(codeToRun));
+				myFunction();
+			}
+			catch (e:Dynamic)
+			{
+				switch (e)
+				{
+					case 'Null Function Pointer', 'SReturn':
+					// nothing
+					default:
+						luaTrace(scriptName + ":" + lastCalledFunction + " - " + e, false, false);
+				}
+			}
+			#end
+		});
+
+		Lua_helper.add_callback(lua, "addHaxeLibrary", function(libName:String, ?libFolder:String = '')
+		{
+			#if hscript
+			initHaxeInterp();
+
+			try
+			{
+				var str:String = '';
+				if (libFolder.length > 0)
+					str = libFolder + '.';
+
+				haxeInterp.variables.set(libName, Type.resolveClass(str + libName));
+			}
+			catch (e:Dynamic)
+			{
+				luaTrace(scriptName + ":" + lastCalledFunction + " - " + e, false, false);
+			}
+			#end
 		});
 
 		Lua_helper.add_callback(lua, "loadSong", function(?name:String = null, ?difficultyNum:Int = -1) // i love dave and bambi EXPUNGED PEAK
@@ -1534,7 +1626,35 @@ class FunkinLua
 			}
 			return 0;
 		});
+		
+		// hello captainbaldi yooooo =O
+		Lua_helper.add_callback(lua, "parseJson", function(jsonStr:String, varName:String) {
+			var json = Paths.modFolders(jsonStr + '.json');
+			var foundJson:Bool;
 
+			#if sys
+				if (FileSystem.exists(json)) {
+					foundJson = true;
+				} else {
+					luaTrace('parseJson: Invalid JSON file path!', false, false);
+					foundJson = false;
+					return;	
+				}
+			#else
+				if (Assets.exists(json)) {
+					foundJson = true;
+				} else {
+					luaTrace('parseJson: Invalid JSON file path!', false, false);
+					foundJson = false;
+					return;	
+				}
+			#end
+
+			if (foundJson) {
+				var parsedJson = haxe.Json.parse(File.getContent(json));				
+				PlayState.instance.variables.set(varName, parsedJson);
+			}
+		});
 		// String tools
 		Lua_helper.add_callback(lua, "stringStartsWith", function(str:String, start:String)
 		{
@@ -2058,6 +2178,75 @@ class FunkinLua
 			luaTrace('Save file not initialized: ' + name);
 		});
 
+		Lua_helper.add_callback(lua, "checkFileExists", function(filename:String, ?absolute:Bool = false)
+		{
+			#if MODS_ALLOWED
+			if (absolute)
+			{
+				return FileSystem.exists(filename);
+			}
+
+			var path:String = Paths.modFolders(filename);
+			if (FileSystem.exists(path))
+			{
+				return true;
+			}
+			return FileSystem.exists(Paths.getPath('assets/$filename', TEXT));
+			#else
+			if (absolute)
+			{
+				return Assets.exists(filename);
+			}
+			return Assets.exists(Paths.getPath('assets/$filename', TEXT));
+			#end
+		});
+		Lua_helper.add_callback(lua, "saveFile", function(path:String, content:String, ?absolute:Bool = false)
+		{
+			try
+			{
+				if (!absolute)
+					File.saveContent(Paths.mods(path), content);
+				else
+					File.saveContent(path, content);
+
+				return true;
+			}
+			catch (e:Dynamic)
+			{
+				luaTrace("Error trying to save " + path + ": " + e, false, false);
+			}
+			return false;
+		});
+		Lua_helper.add_callback(lua, "deleteFile", function(path:String, ?ignoreModFolders:Bool = false)
+		{
+			try
+			{
+				#if MODS_ALLOWED
+				if (!ignoreModFolders)
+				{
+					var lePath:String = Paths.modFolders(path);
+					if (FileSystem.exists(lePath))
+					{
+						FileSystem.deleteFile(lePath);
+						return true;
+					}
+				}
+				#end
+
+				var lePath:String = Paths.getPath(path, TEXT);
+				if (Assets.exists(lePath))
+				{
+					FileSystem.deleteFile(lePath);
+					return true;
+				}
+			}
+			catch (e:Dynamic)
+			{
+				luaTrace("Error trying to delete " + path + ": " + e, false, false);
+			}
+			return false;
+		});
+
 		Lua_helper.add_callback(lua, "getTextFromFile", function(path:String, ?ignoreModFolders:Bool = false)
 		{
 			return Paths.getTextFromFile(path, ignoreModFolders);
@@ -2235,6 +2424,40 @@ class FunkinLua
 		call('onCreate', []);
 		#end
 	}
+
+	#if hscript
+	public function initHaxeInterp()
+	{
+		if (haxeInterp == null)
+		{
+			haxeInterp = new Interp();
+			haxeInterp.variables.set('FlxG', FlxG);
+			haxeInterp.variables.set('FlxSprite', FlxSprite);
+			haxeInterp.variables.set('FlxCamera', FlxCamera);
+			haxeInterp.variables.set('FlxTween', FlxTween);
+			haxeInterp.variables.set('FlxEase', FlxEase);
+			haxeInterp.variables.set('PlayState', PlayState);
+			haxeInterp.variables.set('game', PlayState.instance);
+			haxeInterp.variables.set('Paths', Paths);
+			haxeInterp.variables.set('Conductor', Conductor);
+			haxeInterp.variables.set('ClientPrefs', ClientPrefs);
+			haxeInterp.variables.set('Character', Character);
+			haxeInterp.variables.set('Alphabet', Alphabet);
+			haxeInterp.variables.set('StringTools', StringTools);
+
+			haxeInterp.variables.set('setVar', function(name:String, value:Dynamic)
+			{
+				PlayState.instance.variables.set(name, value);
+			});
+			haxeInterp.variables.set('getVar', function(name:String)
+			{
+				if (!PlayState.instance.variables.exists(name))
+					return null;
+				return PlayState.instance.variables.get(name);
+			});
+		}
+	}
+	#end
 
 	inline static function getTextObject(name:String):FlxText
 	{
@@ -2510,6 +2733,8 @@ class FunkinLua
 		#end
 	}
 
+	var lastCalledFunction:String = '';
+
 	public function call(event:String, args:Array<Dynamic>):Dynamic
 	{
 		#if LUA_ALLOWED
@@ -2517,6 +2742,8 @@ class FunkinLua
 		{
 			return Function_Continue;
 		}
+
+		lastCalledFunction = event;
 
 		Lua.getglobal(lua, event);
 
@@ -2544,6 +2771,7 @@ class FunkinLua
 			var conv:Dynamic = Convert.fromLua(lua, result);
 			return conv;
 		}
+		Lua.pop(lua, 1);
 		#end
 		return Function_Continue;
 	}
@@ -2690,13 +2918,9 @@ class DebugLuaText extends FlxText
 	{
 		super.update(elapsed);
 		disableTime -= elapsed;
-		if (disableTime <= 0)
-		{
-			kill();
-			parentGroup.remove(this);
-			destroy();
-		}
-		else if (disableTime < 1)
+		if (disableTime < 0)
+			disableTime = 0;
+		if (disableTime < 1)
 			alpha = disableTime;
 	}
 }

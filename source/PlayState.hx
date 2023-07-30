@@ -65,7 +65,7 @@ using StringTools;
 
 class PlayState extends MusicBeatState
 {
-	public static var STRUM_X = 42;
+	public static var STRUM_X = 48.5;
 	public static var STRUM_X_MIDDLESCROLL = -278;
 
 	public static var ratingStuff:Array<Dynamic> = [
@@ -98,10 +98,12 @@ class PlayState extends MusicBeatState
 	public var boyfriendMap:Map<String, Boyfriend> = new Map();
 	public var dadMap:Map<String, Character> = new Map();
 	public var gfMap:Map<String, Character> = new Map();
+	public var variables:Map<String, Dynamic> = new Map();
 	#else
 	public var boyfriendMap:Map<String, Boyfriend> = new Map<String, Boyfriend>();
 	public var dadMap:Map<String, Character> = new Map<String, Character>();
 	public var gfMap:Map<String, Character> = new Map<String, Character>();
+	public var variables:Map<String, Dynamic> = new Map<String, Dynamic>();
 	#end
 
 	public var BF_X:Float = 770;
@@ -142,8 +144,8 @@ class PlayState extends MusicBeatState
 	private var strumLine:FlxSprite;
 
 	// Handles the new epic mega sexy cam code that i've done
-	private var camFollow:FlxPoint;
-	private var camFollowPos:FlxObject;
+	public var camFollow:FlxPoint;
+	public var camFollowPos:FlxObject;
 
 	private static var prevCamFollow:FlxPoint;
 	private static var prevCamFollowPos:FlxObject;
@@ -4664,15 +4666,12 @@ class PlayState extends MusicBeatState
 		}
 	}
 
-	private var preventLuaRemove:Bool = false;
-
 	override function destroy()
 	{
-		preventLuaRemove = true;
-		for (i in 0...luaArray.length)
+		for (lua in luaArray)
 		{
-			luaArray[i].call('onDestroy', []);
-			luaArray[i].stop();
+			lua.call('onDestroy', []);
+			lua.stop();
 		}
 		luaArray = [];
 
@@ -4681,6 +4680,11 @@ class PlayState extends MusicBeatState
 			FlxG.stage.removeEventListener(KeyboardEvent.KEY_DOWN, onKeyPress);
 			FlxG.stage.removeEventListener(KeyboardEvent.KEY_UP, onKeyRelease);
 		}
+
+		#if hscript
+		FunkinLua.haxeInterp = null;
+		#end
+
 		super.destroy();
 	}
 
@@ -4695,7 +4699,7 @@ class PlayState extends MusicBeatState
 
 	public function removeLua(lua:FunkinLua)
 	{
-		if (luaArray != null && !preventLuaRemove)
+		if (luaArray != null)
 		{
 			luaArray.remove(lua);
 		}
