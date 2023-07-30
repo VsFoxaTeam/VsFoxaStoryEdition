@@ -195,7 +195,7 @@ class StoryMenuState extends MusicBeatState
 			lerpScore = intendedScore;
 		}
 
-		scoreText.text = "BEST  WEEK SCORE:" + lerpScore;
+		scoreText.text = "WEEK SCORE:" + lerpScore;
 
 		difficultySelectors.visible = !weekIsLocked(curWeek);
 
