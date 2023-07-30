@@ -131,8 +131,6 @@ class PlayState extends MusicBeatState
 
 	public var vocals:FlxSound;
 
-	public var originalX:Float;
-
 	public var dad:Character;
 	public var gf:Character;
 	public var boyfriend:Boyfriend;
@@ -1072,7 +1070,7 @@ class PlayState extends MusicBeatState
 		scoreTxt = new FlxText(0, healthBarBG.y + 36, FlxG.width, "", 20);
 		scoreTxt.setFormat(Paths.font("vcr.ttf"), 20, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		scoreTxt.scrollFactor.set();
-		originalX = scoreTxt.x;
+		scoreTxt.screenCenter(X);
 		scoreTxt.borderSize = 1.25;
 		scoreTxt.visible = !ClientPrefs.hideHud;
 		add(scoreTxt);
@@ -2509,10 +2507,6 @@ class PlayState extends MusicBeatState
 			scoreTxt.text = 'Score: ' + songScore + ' | Misses: ' + songMisses + ' | Health: ' + health + ' | Rating: ' + ratingName + ' ('
 				+ Highscore.floorDecimal(ratingPercent * 100, 2) + '%)' + ' - ' + ratingFC; // peeps wanted no integer rating
 		}
-
-		var lengthInPx = scoreTxt.textField.length * scoreTxt.frameHeight; // bad way but does more or less a better job
-
-		scoreTxt.x = (originalX - (lengthInPx / 2)) + 335;
 
 		if (botplayTxt.visible)
 		{
