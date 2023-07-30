@@ -9,6 +9,11 @@ using StringTools;
 
 class ButtplugUtils
 {
+	/**
+	 * buttplug utils shit
+	 * https://github.com/GsDrunkestDriver/funkin-buttplug/
+	 * @GsDrunkestDriver
+	 */
 	// no, i'm not kidding.
 	// This class simplifies the process of setting up and using the buttplug frontend.
 	// It's not perfect at the minute as I wrote this literally yesterday, but it (sorta) works.

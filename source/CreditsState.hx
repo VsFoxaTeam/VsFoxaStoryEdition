@@ -104,13 +104,6 @@ class CreditsState extends MusicBeatState
 				'https://twitter.com/river_oaken',
 				'C30085'
 			],
-			[
-				'shubs',
-				'shubs',
-				'Additional Programmer of Psych Engine',
-				'https://twitter.com/yoshubs',
-				'279ADC'
-			],
 			[''],
 			['Former Engine Members'],
 			[
@@ -120,6 +113,13 @@ class CreditsState extends MusicBeatState
 				'https://twitter.com/bbsub3',
 				'389A58'
 			],
+			[
+				'shubs',
+				'shubs',
+				'(Now known as CubicYoshi) Additional Ex-Programmer of Psych Engine',
+				'https://twitter.com/yoshubs',
+				'279ADC'
+			],
 			[''],
 			['Engine Contributors'],
 			[
@@ -127,6 +127,20 @@ class CreditsState extends MusicBeatState
 				'iflicky',
 				'Delay/Combo Menu Song Composer\nand Dialogue Sounds',
 				'https://twitter.com/flicky_i',
+				'AA32FE'
+			],
+			[
+				'MemeHoovy',
+				'hoovy',
+				'Some code',
+				'https://github.com/MemeHovy',
+				'AA32FE'
+			],
+			[
+				'GSDrunkestDriver',
+				'drunkest',
+				'Buttplug Support',
+				'https://github.com/GsDrunkestDriver/',
 				'AA32FE'
 			],
 			[
