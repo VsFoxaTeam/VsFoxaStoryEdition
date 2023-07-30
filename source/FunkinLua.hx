@@ -1,3 +1,5 @@
+package;
+
 #if LUA_ALLOWED
 import llua.Lua;
 import llua.LuaL;
@@ -10,7 +12,6 @@ import flixel.FlxG;
 import flixel.addons.effects.FlxTrail;
 import flixel.input.keyboard.FlxKey;
 import haxe.Exception;
-import hscript.Expr;
 import flixel.tweens.FlxTween;
 import flixel.tweens.FlxEase;
 import flixel.text.FlxText;
@@ -43,6 +44,7 @@ import DialogueBoxPsych;
 #if hscript
 import hscript.Parser;
 import hscript.Interp;
+import hscript.Expr;
 #end
 #if desktop
 import Discord;
@@ -91,8 +93,8 @@ class FunkinLua
 			return;
 		}
 		scriptName = script;
-		#if hscript 
-		initHaxeModule(); 
+		#if hscript
+		initHaxeModule();
 		#end
 		trace('Lua file loaded succesfully:' + script + 'Lets goooo');
 
@@ -315,11 +317,13 @@ class FunkinLua
 			luaTrace("Script doesn't exist!");
 		});
 
-		Lua_helper.add_callback(lua, "setVar", function(varName:String, value:Dynamic) {
+		Lua_helper.add_callback(lua, "setVar", function(varName:String, value:Dynamic)
+		{
 			PlayState.instance.variables.set(varName, value);
 			return value;
 		});
-		Lua_helper.add_callback(lua, "getVar", function(varName:String) {
+		Lua_helper.add_callback(lua, "getVar", function(varName:String)
+		{
 			return PlayState.instance.variables.get(varName);
 		});
 
