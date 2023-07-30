@@ -62,6 +62,7 @@ class FunkinLua
 	#end
 	public var camTarget:FlxCamera;
 	public var scriptName:String = '';
+	public var closed:Bool = false;
 
 	public var variables:Map<String, Dynamic> = [];
 
@@ -965,6 +966,52 @@ class FunkinLua
 			if (!color.startsWith('0x'))
 				color = '0xff' + color;
 			return Std.parseInt(color);
+		});
+		Lua_helper.add_callback(lua, "keyboardJustPressed", function(name:String)
+		{
+			return Reflect.getProperty(FlxG.keys.justPressed, name);
+		});
+		Lua_helper.add_callback(lua, "keyboardPressed", function(name:String)
+		{
+			return Reflect.getProperty(FlxG.keys.pressed, name);
+		});
+		Lua_helper.add_callback(lua, "keyboardReleased", function(name:String)
+		{
+			return Reflect.getProperty(FlxG.keys.justReleased, name);
+		});
+
+		Lua_helper.add_callback(lua, "anyGamepadJustPressed", function(name:String)
+		{
+			return FlxG.gamepads.anyJustPressed(name);
+		});
+		Lua_helper.add_callback(lua, "anyGamepadPressed", function(name:String)
+		{
+			return FlxG.gamepads.anyPressed(name);
+		});
+		Lua_helper.add_callback(lua, "anyGamepadReleased", function(name:String)
+		{
+			return FlxG.gamepads.anyJustReleased(name);
+		});
+
+		Lua_helper.add_callback(lua, "gamepadAnalogX", function(id:Int, ?leftStick:Bool = true)
+		{
+			return FlxG.gamepads.getByID(id).getXAxis(leftStick ? LEFT_ANALOG_STICK : RIGHT_ANALOG_STICK);
+		});
+		Lua_helper.add_callback(lua, "gamepadAnalogY", function(id:Int, ?leftStick:Bool = true)
+		{
+			return FlxG.gamepads.getByID(id).getYAxis(leftStick ? LEFT_ANALOG_STICK : RIGHT_ANALOG_STICK);
+		});
+		Lua_helper.add_callback(lua, "gamepadJustPressed", function(id:Int, name:String)
+		{
+			return Reflect.getProperty(FlxG.gamepads.getByID(id).justPressed, name);
+		});
+		Lua_helper.add_callback(lua, "gamepadPressed", function(id:Int, name:String)
+		{
+			return Reflect.getProperty(FlxG.gamepads.getByID(id).pressed, name);
+		});
+		Lua_helper.add_callback(lua, "gamepadJustReleased", function(id:Int, name:String)
+		{
+			return Reflect.getProperty(FlxG.gamepads.getByID(id).justReleased, name);
 		});
 		Lua_helper.add_callback(lua, "keyJustPressed", function(name:String)
 		{
@@ -1981,17 +2028,11 @@ class FunkinLua
 				text5 = '';
 			luaTrace('' + text1 + text2 + text3 + text4 + text5, true, false);
 		});
-		Lua_helper.add_callback(lua, "close", function(printMessage:Bool)
+
+		Lua_helper.add_callback(lua, "close", function()
 		{
-			if (!gonnaClose)
-			{
-				if (printMessage)
-				{
-					luaTrace('Stopping lua script: ' + scriptName);
-				}
-				PlayState.instance.closeLuas.push(this);
-			}
-			gonnaClose = true;
+			closed = true;
+			return closed;
 		});
 
 		Lua_helper.add_callback(lua, "changePresence",
@@ -2276,6 +2317,31 @@ class FunkinLua
 				luaTrace("Error trying to delete " + path + ": " + e, false, false);
 			}
 			return false;
+		});
+
+		Lua_helper.add_callback(lua, "setHealthBarColors", function(leftHex:String, rightHex:String)
+		{
+			var left:FlxColor = Std.parseInt(leftHex);
+			if (!leftHex.startsWith('0x'))
+				left = Std.parseInt('0xff' + leftHex);
+			var right:FlxColor = Std.parseInt(rightHex);
+			if (!rightHex.startsWith('0x'))
+				right = Std.parseInt('0xff' + rightHex);
+
+			PlayState.instance.healthBar.createFilledBar(left, right);
+			PlayState.instance.healthBar.updateBar();
+		});
+		Lua_helper.add_callback(lua, "setTimeBarColors", function(leftHex:String, rightHex:String)
+		{
+			var left:FlxColor = Std.parseInt(leftHex);
+			if (!leftHex.startsWith('0x'))
+				left = Std.parseInt('0xff' + leftHex);
+			var right:FlxColor = Std.parseInt(rightHex);
+			if (!rightHex.startsWith('0x'))
+				right = Std.parseInt('0xff' + rightHex);
+
+			PlayState.instance.timeBar.createFilledBar(right, left);
+			PlayState.instance.timeBar.updateBar();
 		});
 
 		Lua_helper.add_callback(lua, "getTextFromFile", function(path:String, ?ignoreModFolders:Bool = false)
@@ -2756,6 +2822,11 @@ class FunkinLua
 	public function call(event:String, args:Array<Dynamic>):Dynamic
 	{
 		#if LUA_ALLOWED
+		if (closed)
+		{
+			return Function_Continue;
+		}
+
 		if (lua == null)
 		{
 			return Function_Continue;

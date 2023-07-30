@@ -129,13 +129,7 @@ class CreditsState extends MusicBeatState
 				'https://twitter.com/flicky_i',
 				'AA32FE'
 			],
-			[
-				'MemeHoovy',
-				'hoovy',
-				'Some code',
-				'https://github.com/MemeHovy',
-				'AA32FE'
-			],
+			['MemeHoovy', 'hoovy', 'Some code', 'https://github.com/MemeHovy', 'AA32FE'],
 			[
 				'GSDrunkestDriver',
 				'drunkest',
@@ -231,7 +225,12 @@ class CreditsState extends MusicBeatState
 					Paths.currentModDirectory = creditsStuff[i][5];
 				}
 
-				var icon:AttachedSprite = new AttachedSprite('credits/' + creditsStuff[i][1]);
+				var str:String = 'credits/missing_icon';
+				if (Paths.image('credits/' + creditsStuff[i][1]) != null)
+				{
+					str = 'credits/' + creditsStuff[i][1];
+				}
+				var icon:AttachedSprite = new AttachedSprite(str);
 				icon.xAdd = optionText.width + 10;
 				icon.sprTracker = optionText;
 

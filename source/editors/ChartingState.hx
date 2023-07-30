@@ -162,6 +162,7 @@ class ChartingState extends MusicBeatState
 		2,
 		3,
 		4,
+		6,
 		8,
 		12,
 		16,
@@ -176,6 +177,7 @@ class ChartingState extends MusicBeatState
 		2,
 		3,
 		4,
+		6,
 		8,
 		12,
 	];
