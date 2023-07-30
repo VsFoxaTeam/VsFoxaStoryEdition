@@ -85,6 +85,7 @@ class ChartingState extends MusicBeatState
 		['Alt Idle Animation', "Sets a specified suffix after the idle animation name.\nYou can use this to trigger 'idle-alt' if you set\nValue 2 to -alt\n\nValue 1: Character to set (Dad, BF or GF)\nValue 2: New suffix (Leave it blank to disable)"],
 		['Screen Shake', "Value 1: Camera shake\nValue 2: HUD shake\n\nEvery value works as the following example: \"1, 0.05\".\nThe first number (1) is the duration.\nThe second number (0.05) is the intensity."],
 		['Change Character', "Value 1: Character to change (Dad, BF, GF)\nValue 2: New character's name"],
+		['Change Icon', "Value 1: Player 1 Icon\nValue 2: Player 2 Icon"],
 		['Change Scroll Speed', "Value 1: Scroll Speed Multiplier (1 is default)\nValue 2: Time it takes to change fully in seconds."]
 	];
 
@@ -155,8 +156,11 @@ class ChartingState extends MusicBeatState
 	#if !html5
 	var zoomList:Array<Float> = [
 		0.5,
+		0.75,
 		1,
+		1.5,
 		2,
+		3,
 		4,
 		8,
 		12,
@@ -166,11 +170,14 @@ class ChartingState extends MusicBeatState
 	#else //The grid gets all black when over 1/12 snap
 	var zoomList:Array<Float> = [
 		0.5,
+		0.75,
 		1,
+		1.5,
 		2,
+		3,
 		4,
 		8,
-		12
+		12,
 	];
 	#end
 
@@ -2019,7 +2026,7 @@ class ChartingState extends MusicBeatState
 		gridLayer.add(gridBlackLine);
 
 		for (i in 1...4){
-		var beatsep1:FlxSprite = new FlxSprite(gridBG.x,(GRID_SIZE * (4*curZoom))*i).makeGraphic(Std.int(gridBG.width), 1, 0x44FF0000);
+		var beatsep1:FlxSprite = new FlxSprite(gridBG.x, (GRID_SIZE * (4 * zoomList[curZoom])) * i).makeGraphic(Std.int(gridBG.width), 1, 0x44FF0000);
 		if(vortex)gridLayer.add(beatsep1);
 		}
 

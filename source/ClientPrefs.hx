@@ -22,6 +22,7 @@ class ClientPrefs
 	public static var cursing:Bool = true;
 	public static var violence:Bool = true;
 	public static var camZooms:Bool = true;
+	public static var hitsoundVolume:Float = 0;
 	public static var hideHud:Bool = false;
 	public static var noteOffset:Int = 0;
 	public static var arrowHSV:Array<Array<Int>> = [[0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0]];
@@ -109,6 +110,7 @@ class ClientPrefs
 		// FlxG.save.data.violence = violence;
 		FlxG.save.data.camZooms = camZooms;
 		FlxG.save.data.noteOffset = noteOffset;
+		FlxG.save.data.hitsoundVolume = hitsoundVolume;
 		FlxG.save.data.hideHud = hideHud;
 		FlxG.save.data.arrowHSV = arrowHSV;
 		FlxG.save.data.imagesPersist = imagesPersist;
@@ -180,6 +182,10 @@ class ClientPrefs
 		if (FlxG.save.data.noteSplashes != null)
 		{
 			noteSplashes = FlxG.save.data.noteSplashes;
+		}
+		if (FlxG.save.data.hitsoundVolume != null)
+		{
+			hitsoundVolume = FlxG.save.data.hitsoundVolume;
 		}
 		if (FlxG.save.data.lowQuality != null)
 		{

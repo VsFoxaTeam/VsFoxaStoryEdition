@@ -954,12 +954,12 @@ class FunkinLua
 			PlayState.instance.KillNotes();
 			PlayState.instance.endSong();
 		});
-		Lua_helper.add_callback(lua, "restartSong", function(skipTransition:Bool)
+		Lua_helper.add_callback(lua, "restartSong", function(?skipTransition:Bool)
 		{
 			PlayState.instance.persistentUpdate = false;
 			PauseSubState.restartSong(skipTransition);
 		});
-		Lua_helper.add_callback(lua, "exitSong", function(skipTransition:Bool)
+		Lua_helper.add_callback(lua, "exitSong", function(?skipTransition:Bool)
 		{
 			if (skipTransition)
 			{

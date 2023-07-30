@@ -1212,6 +1212,8 @@ class PlayState extends MusicBeatState
 		RecalculateRating();
 
 		// PRECACHING MISS SOUNDS BECAUSE I THINK THEY CAN LAG PEOPLE AND FUCK THEM UP IDK HOW HAXE WORKS
+		if (ClientPrefs.hitsoundVolume > 0)
+			CoolUtil.precacheSound('ChartingTick');
 		CoolUtil.precacheSound('missnote1');
 		CoolUtil.precacheSound('missnote2');
 		CoolUtil.precacheSound('missnote3');
@@ -3052,6 +3054,11 @@ class PlayState extends MusicBeatState
 					value = 1;
 				gfSpeed = value;
 
+			case 'Change Icon':
+				iconP1.changeIcon(value1);
+				iconP2.changeIcon(value2);
+				reloadHealthBarColors();
+
 			case 'Blammed Lights':
 				var lightId:Int = Std.parseInt(value1);
 				if (Math.isNaN(lightId))
@@ -4333,6 +4340,11 @@ class PlayState extends MusicBeatState
 		{
 			if (cpuControlled && (note.ignoreNote || note.hitCausesMiss))
 				return;
+
+			if (ClientPrefs.hitsoundVolume > 0)
+			{
+				FlxG.sound.play(Paths.sound('ChartingTick'), ClientPrefs.hitsoundVolume);
+			}
 
 			if (note.hitCausesMiss)
 			{

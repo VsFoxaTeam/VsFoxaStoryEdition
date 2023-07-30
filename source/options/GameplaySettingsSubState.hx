@@ -56,6 +56,15 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 		var option:Option = new Option('Disable Reset Button', "If checked, pressing Reset won't do anything.", 'noReset', 'bool', false);
 		addOption(option);
 
+		var option:Option = new Option('Hitsound Volume', 'Funny notes does \"Tick!\" when you hit them."', 'hitsoundVolume', 'percent', 0);
+		addOption(option);
+		option.scrollSpeed = 1.6;
+		option.minValue = 0.0;
+		option.maxValue = 1;
+		option.changeValue = 0.1;
+		option.decimals = 1;
+		option.onChange = onChangeHitsoundVolume;
+
 		#if desktop
 		var option:Option = new Option('Auto Pause', "If checked, the game will automatically freeze itself when not in focus.", 'autoPause', 'bool', true);
 		addOption(option);
@@ -110,4 +119,9 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 		FlxG.autoPause = ClientPrefs.autoPause;
 	}
 	#end
+
+	function onChangeHitsoundVolume()
+	{
+		FlxG.sound.play(Paths.sound('ChartingTick'), ClientPrefs.hitsoundVolume);
+	}
 }
