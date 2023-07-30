@@ -1,78 +1,78 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
-				-17,
-				40
+				486,
+				-56
 			],
-			"anim": "singUP",
-			"fps": 24,
-			"name": "Sing Up",
-			"indices": []
-		},
-		{
-			"loop": true,
-			"offsets": [
-				0,
-				0
-			],
+			"indices": [],
+			"fps": 12,
 			"anim": "idle",
-			"fps": 24,
-			"name": "Idle",
-			"indices": []
+			"loop": false,
+			"name": "Foxa Idle"
 		},
 		{
-			"loop": false,
 			"offsets": [
-				-42,
-				-1
+				482,
+				-55
 			],
+			"indices": [],
+			"fps": 12,
 			"anim": "singLEFT",
-			"fps": 24,
-			"name": "Sing Left",
-			"indices": []
+			"loop": false,
+			"name": "Foxa Left"
 		},
 		{
-			"loop": false,
 			"offsets": [
-				2,
-				37
+				480,
+				-55
 			],
-			"anim": "singRIGHT",
-			"fps": 24,
-			"name": "Sing Right",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-2,
-				-37
-			],
+			"indices": [],
+			"fps": 12,
 			"anim": "singDOWN",
-			"fps": 24,
-			"name": "Sing Down",
-			"indices": []
+			"loop": false,
+			"name": "Foxa Down"
+		},
+		{
+			"offsets": [
+				483,
+				-55
+			],
+			"indices": [],
+			"fps": 12,
+			"anim": "singUP",
+			"loop": false,
+			"name": "Foxa Up"
+		},
+		{
+			"offsets": [
+				482,
+				-55
+			],
+			"indices": [],
+			"fps": 12,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "Foxa Right"
 		}
 	],
-	"no_antialiasing": false,
+	"no_antialiasing": true,
 	"image": "characters/foxa",
 	"position": [
-		0,
-		0
+		70,
+		40
 	],
 	"healthicon": "foxa",
 	"flip_x": false,
 	"healthbar_colors": [
-		255,
-		209,
-		255
+		238,
+		171,
+		252
 	],
 	"camera_position": [
-		150,
-		180
+		300,
+		-10
 	],
 	"sing_duration": 6.1,
-	"scale": 0.9
+	"scale": 1
 }
