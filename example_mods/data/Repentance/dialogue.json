@@ -5,7 +5,7 @@
 			"portrait": "updike-serious",
 			"boxState": "normal",
 			"expression": "talk",
-			"text": "I Should have done this a long time ago when I had the chance. "
+			"text": "I should have done this a long time ago when I had the chance. "
 		},
 		{
 			"speed": 0.065,
@@ -75,7 +75,7 @@
 			"portrait": "unawarefox2",
 			"boxState": "normal",
 			"expression": "talk",
-			"text": "\"it's for the greater good\"...?"
+			"text": "the greater good...?"
 		},
 		{
 			"speed": 0.035,
@@ -110,14 +110,14 @@
 			"portrait": "Angry-foxa1",
 			"boxState": "angry",
 			"expression": "talk",
-			"text": "HE NEVER EVEN DID ANYTHING WRONG TO THIS ENVIORMENT. YET YOU STILL CHOOSE TO HUNT HIM DOWN."
+			"text": "HE NEVER EVEN DID ANYTHING WRONG TO THIS ENVIORMENT. YET YOU STILL CHOOSE TO HUNT HIM DOWN!"
 		},
 		{
 			"speed": 0.035,
 			"portrait": "angry-foxa2",
 			"boxState": "angry",
 			"expression": "talk",
-			"text": "THAT BLUE HAIRED RAT CAME BY AND MADE HIM ANGRY, JUST AS I WARNED HIM NOT TO COME BY."
+			"text": "THAT BLUE HAIRED BRAT CAME BY AND MADE HIM ANGRY, JUST AS I WARNED HIM NOT TO COME BY."
 		},
 		{
 			"speed": 0.175,

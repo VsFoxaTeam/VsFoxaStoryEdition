@@ -2,7 +2,7 @@
 	"dialogue": [
 		{
 			"expression": "",
-			"text": "so...",
+			"text": "So...",
 			"boxState": "normal",
 			"speed": 0.05,
 			"portrait": "port"
@@ -16,14 +16,14 @@
 		},
 		{
 			"expression": "talk",
-			"text": "Are you? ",
+			"text": "Are you?",
 			"boxState": "normal",
 			"speed": 0.05,
 			"portrait": "angy"
 		},
 		{
 			"expression": "pissed",
-			"text": "brep bappity  boop.",
+			"text": "brep bappity boop.",
 			"boxState": "normal",
 			"speed": 0.05,
 			"portrait": "bf"
@@ -100,7 +100,7 @@
 		},
 		{
 			"expression": "talk",
-			"text": "Just go home...",
+			"text": "Just go home already...",
 			"boxState": "normal",
 			"speed": 0.05,
 			"portrait": "port"
@@ -114,7 +114,7 @@
 		},
 		{
 			"expression": "talk",
-			"text": "Alright Listen here, you Blue haired Twit...",
+			"text": "Alright, listen here, you blue haired Twit...",
 			"boxState": "normal",
 			"speed": 0.05,
 			"portrait": "angy"
@@ -128,7 +128,7 @@
 		},
 		{
 			"expression": "talk",
-			"text": " I'll make sure you regret being born.",
+			"text": "I'll make sure you regret being born.",
 			"boxState": "normal",
 			"speed": 0.05,
 			"portrait": "angy"
@@ -166,11 +166,11 @@
 			"portrait": "port",
 			"boxState": "normal",
 			"expression": "talk",
-			"text": "So, It's like that, huh?"
+			"text": "So, it's like that, huh?"
 		},
 		{
 			"expression": "talk",
-			"text": "Well I guess I have no choice. ",
+			"text": "Well, I guess I have no choice. ",
 			"boxState": "normal",
 			"speed": 0.05,
 			"portrait": "angy"

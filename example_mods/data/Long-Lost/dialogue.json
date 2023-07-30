@@ -5,7 +5,7 @@
 			"portrait": "unawarefox1",
 			"boxState": "normal",
 			"expression": "talk",
-			"text": "augh...."
+			"text": "Augh..."
 		},
 		{
 			"speed": 0.125,
@@ -40,14 +40,14 @@
 			"portrait": "unawarefox2",
 			"boxState": "angry",
 			"expression": "talk",
-			"text": "here, let me he-"
+			"text": "Here, let me hel-"
 		},
 		{
 			"speed": 0.05,
 			"portrait": "updike-talk",
 			"boxState": "normal",
 			"expression": "talk",
-			"text": "You aren't going to help anyone, Fox. "
+			"text": "You aren't going to help anyone, Foxa."
 		},
 		{
 			"speed": 0.05,
@@ -75,28 +75,28 @@
 			"portrait": "updike-talk",
 			"boxState": "normal",
 			"expression": "talk",
-			"text": "He has been alive for far too long. "
+			"text": "He has been alive for far too long."
 		},
 		{
 			"speed": 0.05,
 			"portrait": "updike-serious",
 			"boxState": "normal",
 			"expression": "confused",
-			"text": "And so have you..."
+			"text": "And so have you."
 		},
 		{
 			"speed": 0.05,
 			"portrait": "gun-updike",
 			"boxState": "normal",
 			"expression": "talk",
-			"text": "There's no way out of fate, Fox. "
+			"text": "There's no way out of fate, Foxa."
 		},
 		{
 			"speed": 0.05,
 			"portrait": "unawarefox2",
 			"boxState": "angry",
 			"expression": "talk",
-			"text": "W-WE CAN TALK ABOUT THIS!"
+			"text": "W-WE CAN TALK ABOUT THIS-"
 		}
 	]
 }

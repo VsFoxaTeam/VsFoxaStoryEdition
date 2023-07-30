@@ -26,7 +26,7 @@
 			"portrait": "port",
 			"boxState": "normal",
 			"expression": "",
-			"text": "all you did was make things harder."
+			"text": "All you did was make things harder."
 		},
 		{
 			"speed": 0.05,
@@ -47,7 +47,7 @@
 			"portrait": "bf",
 			"boxState": "normal",
 			"expression": "talk",
-			"text": "you're not when you're hungry!"
+			"text": "ur not when ur hungry!"
 		},
 		{
 			"speed": 0.015,
@@ -68,7 +68,7 @@
 			"portrait": "bf",
 			"boxState": "normal",
 			"expression": "excited",
-			"text": "Have a snickers!!!! :))))"
+			"text": "have a snickers!!!! :))))"
 		},
 		{
 			"speed": 0.05,

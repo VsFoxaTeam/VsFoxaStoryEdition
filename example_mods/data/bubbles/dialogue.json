@@ -2,7 +2,7 @@
 	"dialogue": [
 		{
 			"expression": "talk",
-			"text": "...huh? ",
+			"text": "...Huh? ",
 			"boxState": "normal",
 			"portrait": "port",
 			"speed": 0.05
@@ -16,7 +16,7 @@
 		},
 		{
 			"expression": "talk",
-			"text": "Ah... It's you two...",
+			"text": "Ah... it's you two...",
 			"boxState": "normal",
 			"portrait": "port",
 			"speed": 0.05
@@ -44,7 +44,7 @@
 		},
 		{
 			"expression": "talk",
-			"text": "That isn't important. Would you mind leaving?",
+			"text": "That isn't even important. Would you mind leaving?",
 			"boxState": "normal",
 			"portrait": "port",
 			"speed": 0.05
@@ -58,7 +58,7 @@
 		},
 		{
 			"expression": "pissed",
-			"text": "Bop Bee Scoboo bep! ",
+			"text": "bop bee scoboo bep! ",
 			"boxState": "normal",
 			"speed": 0.05,
 			"portrait": "bf"

@@ -12,7 +12,7 @@
 			"portrait": "furious",
 			"boxState": "angry",
 			"expression": "talk",
-			"text": "I don't want to be under your control..."
+			"text": "I don't want to be under your control-"
 		},
 		{
 			"speed": 0.05,
@@ -54,7 +54,7 @@
 			"portrait": "furious2",
 			"boxState": "angry",
 			"expression": "talk",
-			"text": "GET OUT OF MY HEAD!"
+			"text": "GET THE FUCK OUT OF MY HEAD!"
 		}
 	]
 }
