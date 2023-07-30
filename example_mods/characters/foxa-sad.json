@@ -1,0 +1,89 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-1,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "foxa idle instance"
+		},
+		{
+			"loop": true,
+			"offsets": [
+				1,
+				0
+			],
+			"anim": "singLEFT",
+			"fps": 240,
+			"name": "foxa left instance",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				0,
+				-3
+			],
+			"anim": "singRIGHT",
+			"fps": 240,
+			"name": "foxa right instance",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				0,
+				1
+			],
+			"anim": "singDOWN",
+			"fps": 240,
+			"name": "foxa down instance",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				-1,
+				0
+			],
+			"anim": "singUP",
+			"fps": 30,
+			"name": "foxa up instance",
+			"indices": []
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 240,
+			"anim": "sadfoxa",
+			"loop": true,
+			"name": "foxa up instance"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/foxa_very_sad",
+	"position": [
+		-410,
+		-110
+	],
+	"healthicon": "sadfoxa",
+	"flip_x": true,
+	"healthbar_colors": [
+		175,
+		102,
+		206
+	],
+	"camera_position": [
+		130,
+		260
+	],
+	"sing_duration": 6.1,
+	"scale": 0.8
+}

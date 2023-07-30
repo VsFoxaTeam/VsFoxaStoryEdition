@@ -1,108 +1,123 @@
 {
 	"dialogue": [
 		{
-			"speed": 0.025,
-			"portrait": "creation",
-			"boxState": "angry",
 			"expression": "",
-                        "sound": "foxamad_d",
-			"text": "I CAN'T TAKE THIS ANYMORE. "
+			"text": "I CAN'T TAKE THIS ANYMORE. ",
+			"boxState": "angry",
+			"speed": 0.025,
+			"portrait": "creation"
 		},
 		{
+			"expression": "shocked",
+			"text": " ",
+			"boxState": "angry",
 			"speed": 0.06,
-			"portrait": "bf",
+			"portrait": "bf"
+		},
+		{
+			"expression": "talk",
+			"text": "I GAVE YOU A WARNING.",
 			"boxState": "angry",
+			"speed": 0.05,
+			"portrait": "creation"
+		},
+		{
+			"expression": "talk",
+			"text": "AND EVEN AFTER THAT...",
+			"boxState": "angry",
+			"speed": 0.05,
+			"portrait": "creation"
+		},
+		{
+			"expression": "talk",
+			"text": "YOU STILL REFUSED TO LEAVE.",
+			"boxState": "angry",
+			"speed": 0.05,
+			"portrait": "creation"
+		},
+		{
+			"expression": "talk",
+			"text": "WHY CAN'T YOU JUST LEAVE!?",
+			"boxState": "angry",
+			"speed": 0.05,
+			"portrait": "creation"
+		},
+		{
+			"expression": "talk",
+			"text": "IF YOU GET PAST ME, YOU WILL REGRET IT.",
+			"boxState": "angry",
+			"speed": 0.05,
+			"portrait": "Creation"
+		},
+		{
+			"expression": "talk",
+			"text": "EVEN NOW...",
+			"boxState": "angry",
+			"speed": 0.05,
+			"portrait": "creation"
+		},
+		{
+			"expression": "talk",
+			"text": "IT'S OVER FOR YOU. ",
+			"boxState": "angry",
+			"speed": 0.05,
+			"portrait": "creation"
+		},
+		{
+			"speed": 0.025,
+			"portrait": "mad",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "HE DIDN'T DESERVE ANY OF THIS, YET YOU PERSIST ON GOING HIS WAY FOR A STUPID RAP BATTLE."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "mad",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "I'M NOT GOING TO LET YOU DO THAT."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "mad",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "I'M NOT GOING TO SIT HERE AND LET YOU RUIN HIS LIFE AND MAKE IT HARDER THAN IT ALREADY IS."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "mad",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "IF YOU WANT TO MAKE HIM GO INSANE, YOU ARE GOING TO HAVE TO GET THROUGH ME, FIRST."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "mad",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "I WILL GIVE IT MY ALL AND PLAY YOUR SICK GAME UNTIL I PHYSICALLY CAN'T ANYMORE."
+		},
+		{
+			"expression": "talk",
+			"text": "CURSE YOU.",
+			"boxState": "angry",
+			"speed": 0.05,
+			"portrait": "creation"
+		},
+		{
+			"expression": "talk",
+			"text": "THIS IS YOUR FAULT. ",
+			"boxState": "angry",
+			"speed": 0.05,
+			"portrait": "creation"
+		},
+		{
 			"expression": "shocked",
-                        "sound": "bf_d",
-			"text": "..."
-		},
-		{
-			"speed": 0.05,
-			"portrait": "creation",
-			"boxState": "angry",
-			"expression": "talk",
-                        "sound": "foxamad_d",
-			"text": "I GAVE YOU A WARNING."
-		},
-		{
-			"speed": 0.05,
-			"portrait": "creation",
-			"boxState": "angry",
-			"expression": "talk",
-                        "sound": "foxamad_d",
-			"text": "AND EVEN AFTER THAT..."
-		},
-		{
-			"speed": 0.05,
-			"portrait": "creation",
-			"boxState": "angry",
-			"expression": "talk",
-                        "sound": "foxamad_d",
-			"text": "YOU STILL REFUSED TO LISTEN."
-		},
-		{
-			"speed": 0.05,
-			"portrait": "creation",
-			"boxState": "angry",
-			"expression": "talk",
-                        "sound": "foxamad_d",
-			"text": "WHY CAN'T YOU JUST LEAVE!?"
-		},
-		{
-			"speed": 0.05,
-			"portrait": "Creation",
-			"boxState": "angry",
-			"expression": "talk",
-                        "sound": "foxamad_d",
-			"text": "IF YOU GET PAST ME, YOU WILL REGRET IT."
-		},
-		{
-			"speed": 0.05,
-			"portrait": "creation",
-			"boxState": "angry",
-			"expression": "talk",
-                        "sound": "foxamad_d",
-			"text": "EVEN NOW..."
-		},
-		{
-			"speed": 0.05,
-			"portrait": "creation",
-			"boxState": "angry",
-			"expression": "talk",
-                        "sound": "foxamad_d",
-			"text": "IT'S OVER FOR YOU. "
-		},
-		{
-			"speed": 0.05,
-			"portrait": "creation",
-			"boxState": "angry",
-			"expression": "talk",
-                        "sound": "foxamad_d",
-			"text": "CURSE YOU."
-		},
-		{
-			"speed": 0.05,
-			"portrait": "creation",
-			"boxState": "angry",
-			"expression": "talk",
-                        "sound": "foxamad_d",
-			"text": "I HOPE YOU AREN'T REMEMBERED."
-		},
-		{
-			"speed": 0.05,
-			"portrait": "creation",
-			"boxState": "angry",
-			"expression": "talk",
-                        "sound": "foxamad_d",
-			"text": "THIS IS YOUR FAULT. "
-		},
-		{
-			"speed": 0.05,
-			"portrait": "bf",
+			"text": "beep...",
 			"boxState": "normal",
-			"expression": "shocked",
-                        "sound": "bf_d",
-			"text": "beep..."
+			"speed": 0.05,
+			"portrait": "bf"
 		}
 	]
 }

@@ -1,0 +1,102 @@
+{
+	"dialogue": [
+		{
+			"speed": 0.175,
+			"portrait": "unawarefox1",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "augh...."
+		},
+		{
+			"speed": 0.125,
+			"portrait": "unawarefox1",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Where am I..."
+		},
+		{
+			"speed": 0.155,
+			"portrait": "chained-whitty",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "..."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "unawarefox2",
+			"boxState": "angry",
+			"expression": "confused",
+			"text": "W-Whitmore!?"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "unawarefox2",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "W-Why are you all chained up?!"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "unawarefox2",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "here, let me he-"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "updike-talk",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "You aren't going to help anyone, Fox. "
+		},
+		{
+			"speed": 0.05,
+			"portrait": "unawarefox2",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "UPDIKE?!"
+		},
+		{
+			"speed": 0.15,
+			"portrait": "updike-serious",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "..."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "unawarefox2",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "WHY DO YOU HAVE WHITMORE CHAINED UP?!"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "updike-talk",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "He has been alive for far too long. "
+		},
+		{
+			"speed": 0.05,
+			"portrait": "updike-serious",
+			"boxState": "normal",
+			"expression": "confused",
+			"text": "And so have you..."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "gun-updike",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "There's no way out of fate, Fox. "
+		},
+		{
+			"speed": 0.05,
+			"portrait": "unawarefox2",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "W-WE CAN TALK ABOUT THIS!"
+		}
+	]
+}

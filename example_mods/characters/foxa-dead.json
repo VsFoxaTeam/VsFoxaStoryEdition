@@ -1,0 +1,56 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 10,
+			"anim": "deathConfirm",
+			"loop": false,
+			"name": "foxa up instance"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "firstDeath",
+			"loop": false,
+			"name": "foxa down instance"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 30,
+			"anim": "deathLoop",
+			"loop": true,
+			"name": "foxa idle instance"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/foxa-dead",
+	"position": [
+		-410,
+		-110
+	],
+	"healthicon": "sadfoxa",
+	"flip_x": true,
+	"healthbar_colors": [
+		175,
+		102,
+		206
+	],
+	"camera_position": [
+		130,
+		260
+	],
+	"sing_duration": 6.1,
+	"scale": 0.8
+}

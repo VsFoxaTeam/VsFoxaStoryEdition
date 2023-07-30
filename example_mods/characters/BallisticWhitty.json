@@ -2,77 +2,77 @@
 	"animations": [
 		{
 			"offsets": [
-				27,
-				309
+				290,
+				-53
 			],
-			"loop": false,
+			"loop": true,
 			"fps": 24,
-			"anim": "idle",
+			"anim": "singRIGHT",
 			"indices": [],
-			"name": "Whitty idle dance"
+			"name": "Mad sing note right"
 		},
 		{
 			"offsets": [
 				109,
-				196
+				35
 			],
-			"loop": false,
+			"indices": [],
+			"fps": 24,
+			"anim": "idle",
+			"loop": true,
+			"name": "Mad idle dance"
+		},
+		{
+			"offsets": [
+				231,
+				-78
+			],
+			"indices": [],
 			"fps": 24,
 			"anim": "singDOWN",
-			"indices": [],
-			"name": "Whitty Sing Note DOWN"
+			"loop": true,
+			"name": "Mad Sing Note DOWN"
 		},
 		{
 			"offsets": [
-				21,
-				411
+				151,
+				47
 			],
-			"loop": false,
-			"fps": 24,
-			"anim": "singUP",
 			"indices": [],
-			"name": "Whitty Sing Note UP"
-		},
-		{
-			"offsets": [
-				65,
-				243
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "singRIGHT",
-			"indices": [],
-			"name": "whitty sing note right"
-		},
-		{
-			"offsets": [
-				80,
-				340
-			],
-			"loop": false,
 			"fps": 24,
 			"anim": "singLEFT",
+			"loop": true,
+			"name": "Mad Sing Note LEFT"
+		},
+		{
+			"offsets": [
+				150,
+				137
+			],
 			"indices": [],
-			"name": "Whitty Sing Note LEFT"
+			"fps": 24,
+			"anim": "singUP",
+			"loop": true,
+			"name": "Mad Sing Note UP"
 		}
 	],
 	"no_antialiasing": false,
-	"image": "characters/Remixed_Ball_Whitty",
+	"image": "characters/WhittyCrazy",
 	"position": [
 		0,
-		350
+		0
 	],
-	"healthicon": "BallisticWhitty",
+	"healthicon": "ballisticwhitty",
 	"flip_x": false,
 	"healthbar_colors": [
-		255,
+		235,
 		0,
-		50
+		40
 	],
 	"camera_position": [
-		-230,
-		-220
+		-110,
+		130
 	],
-	"sing_duration": 4,
-	"scale": 0.9
+	"sing_duration": 6.1,
+	"scale": 1
 }

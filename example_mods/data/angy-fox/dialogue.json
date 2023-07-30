@@ -1,0 +1,81 @@
+{
+	"dialogue": [
+		{
+			"speed": 0.05,
+			"portrait": "angy",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "I've HAD it with you, The Boyfriend. "
+		},
+		{
+			"speed": 0.05,
+			"portrait": "port",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "I told you to leave..."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "angy",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "But you didn't listen! "
+		},
+		{
+			"speed": 0.05,
+			"portrait": "port",
+			"boxState": "normal",
+			"expression": "",
+			"text": "all you did was make things harder."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "angy",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "I NO LONGER wish to be calm with you..."
+		},
+		{
+			"speed": 0.04,
+			"portrait": "mad",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "AND IF YOU THIN-"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "you're not when you're hungry!"
+		},
+		{
+			"speed": 0.015,
+			"portrait": "mad",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "WH-"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "port",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Huh?-"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "excited",
+			"text": "Have a snickers!!!! :))))"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "angy",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "SCREW YOU!"
+		}
+	]
+}

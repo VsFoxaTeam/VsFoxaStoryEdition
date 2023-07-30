@@ -1,6 +1,6 @@
 {
 	"song": {
-		"speed": 2.7,
+		"speed": 2,
 		"stage": "whitt",
 		"player1": "bf",
 		"player2": "foxa",
@@ -9,7 +9,7 @@
 		"notes": [],
 		"splashSkin": null,
 		"validScore": false,
-		"gfVersion": "gf",
+		"gfVersion": "Gf-whit",
 		"bpm": 120,
 		"arrowSkin": null,
 		"needsVoices": true,

@@ -1,5 +1,5 @@
 {
-	"storyName": "detonator",
+	"storyName": "Your New Week",
 	"difficulties": "",
 	"hideFreeplay": false,
 	"weekBackground": "whitty",
@@ -13,20 +13,11 @@
 	"hideStoryMode": true,
 	"songs": [
 		[
-			"detonator",
+			"sacrifice",
 			"foxa",
 			[
 				255,
 				133,
-				133
-			]
-		],
-		[
-			"angy-fox",
-			"foxa",
-			[
-				146,
-				113,
 				253
 			]
 		]

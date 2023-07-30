@@ -24,3 +24,12 @@ end
 function onSkipDialogue(count)
 	-- triggered when you press Enter and skip a dialogue line that was still being typed, dialogue line starts with 1
 end
+
+function onEndSong()
+	if not allowEnd and isStoryMode then
+		startVideo('Ending1');
+		allowEnd = true;
+		return Function_Stop;
+	end
+	return Function_Continue;
+end

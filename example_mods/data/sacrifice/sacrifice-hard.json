@@ -430,9 +430,9 @@
 						875
 					],
 					[
-						38000,
-						7,
-						875
+						39500,
+						5,
+						375
 					],
 					[
 						39000,
@@ -440,13 +440,28 @@
 						375
 					],
 					[
+						39000,
+						2,
+						875
+					],
+					[
+						38000,
+						7,
+						875
+					],
+					[
 						39500,
-						5,
+						1,
 						375
 					],
 					[
 						39000,
-						2,
+						0,
+						375
+					],
+					[
+						39000,
+						6,
 						875
 					]
 				],
@@ -3700,51 +3715,10 @@
 				"bpm": 120,
 				"changeBPM": false,
 				"mustHitSection": true
-			},
-			{
-				"gfSection": false,
-				"lengthInSteps": 16,
-				"altAnim": false,
-				"typeOfSection": 0,
-				"sectionNotes": [],
-				"bpm": 120,
-				"changeBPM": false,
-				"mustHitSection": true
-			},
-			{
-				"gfSection": false,
-				"lengthInSteps": 16,
-				"altAnim": false,
-				"typeOfSection": 0,
-				"sectionNotes": [],
-				"bpm": 120,
-				"changeBPM": false,
-				"mustHitSection": true
-			},
-			{
-				"gfSection": false,
-				"lengthInSteps": 16,
-				"altAnim": false,
-				"typeOfSection": 0,
-				"sectionNotes": [],
-				"bpm": 120,
-				"changeBPM": false,
-				"mustHitSection": true
 			}
 		],
-		"gfVersion": "Gf-whit",
-		"events": [
-			[
-				64000,
-				[
-					[
-						"Change Character",
-						"dad",
-						"Sad-Foxa"
-					]
-				]
-			]
-		],
+		"gfVersion": "invisible",
+		"events": [],
 		"song": "Sacrifice",
 		"stage": "whitt",
 		"needsVoices": true,

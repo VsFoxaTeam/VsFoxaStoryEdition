@@ -1,0 +1,64 @@
+{
+	"song": {
+		"speed": 1.9,
+		"stage": "act-2",
+		"player1": "remorse-foxa-whitty",
+		"player2": "updike2",
+		"player3": null,
+		"events": [
+			[
+				111875,
+				[
+					[
+						"Change Character",
+						"0",
+						"remorse-foxa-whitty-static"
+					]
+				]
+			],
+			[
+				112000,
+				[
+					[
+						"Change Character",
+						"1",
+						"static2"
+					],
+					[
+						"Blammed Lights",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				128000,
+				[
+					[
+						"Change Character",
+						"0",
+						"remorse-foxa-whitty"
+					],
+					[
+						"Change Character",
+						"1",
+						"updike2"
+					],
+					[
+						"Blammed Lights",
+						"0",
+						""
+					]
+				]
+			]
+		],
+		"notes": [],
+		"splashSkin": null,
+		"validScore": false,
+		"gfVersion": "invisible",
+		"bpm": 120,
+		"arrowSkin": null,
+		"needsVoices": true,
+		"song": "Repetance"
+	}
+}

@@ -1,11 +1,21 @@
 {
 	"song": {
 		"speed": 1.9,
-		"stage": "facility",
+		"stage": "act-2",
 		"player1": "remorse-foxa",
 		"player2": "updike",
 		"player3": null,
 		"events": [
+			[
+				111875,
+				[
+					[
+						"Change Character",
+						"0",
+						"remorse-foxa-static"
+					]
+				]
+			],
 			[
 				112000,
 				[
@@ -26,6 +36,11 @@
 				[
 					[
 						"Change Character",
+						"0",
+						"remorse-foxa"
+					],
+					[
+						"Change Character",
 						"1",
 						"updike"
 					],
@@ -44,6 +59,6 @@
 		"bpm": 120,
 		"arrowSkin": null,
 		"needsVoices": true,
-		"song": "Remorse"
+		"song": "remorse"
 	}
 }

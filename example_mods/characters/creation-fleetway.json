@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				-1,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "foxa idle instance",
+			"indices": []
+		},
+		{
+			"offsets": [
+				1,
+				0
+			],
+			"loop": true,
+			"fps": 240,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "foxa left instance"
+		},
+		{
+			"offsets": [
+				0,
+				-3
+			],
+			"loop": true,
+			"fps": 240,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "foxa right instance"
+		},
+		{
+			"offsets": [
+				0,
+				1
+			],
+			"loop": true,
+			"fps": 240,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "foxa down instance"
+		},
+		{
+			"offsets": [
+				-1,
+				0
+			],
+			"loop": true,
+			"fps": 30,
+			"anim": "singUP",
+			"indices": [],
+			"name": "foxa up instance"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/creation-fleetway",
+	"position": [
+		-410,
+		-110
+	],
+	"healthicon": "foxa-mad",
+	"flip_x": true,
+	"healthbar_colors": [
+		55,
+		0,
+		0
+	],
+	"camera_position": [
+		130,
+		260
+	],
+	"sing_duration": 6.1,
+	"scale": 0.8
+}

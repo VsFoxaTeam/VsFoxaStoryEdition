@@ -4,105 +4,92 @@
 			"expression": "talk",
 			"text": "...huh? ",
 			"boxState": "normal",
-			"speed": 0.05,
-                        "sound": "foxa_d",
-			"portrait": "port"
+			"portrait": "port",
+			"speed": 0.05
 		},
 		{
 			"expression": "pissed",
 			"text": "bidi beep.",
 			"boxState": "normal",
-			"speed": 0.05,
-                        "sound": "bf_d",
-			"portrait": "bf"
+			"portrait": "bf",
+			"speed": 0.05
 		},
 		{
 			"expression": "talk",
-			"text": "Oh... It's you two...",
+			"text": "Ah... It's you two...",
 			"boxState": "normal",
-			"speed": 0.05,
-                        "sound": "foxa_d",
-			"portrait": "port"
+			"portrait": "port",
+			"speed": 0.05
 		},
 		{
 			"expression": "excited",
 			"text": "Beep. ",
 			"boxState": "normal",
-			"speed": 0.05,
-                        "sound": "bf_d",
-			"portrait": "bf"
+			"portrait": "bf",
+			"speed": 0.05
 		},
 		{
 			"expression": "talk",
 			"text": "...Listen, I know you're here to rap battle him, but I'm afraid that I can't let you do that...",
 			"boxState": "normal",
-			"speed": 0.05,
-                        "sound": "foxa_d",
-			"portrait": "port"
+			"portrait": "port",
+			"speed": 0.05
 		},
 		{
 			"expression": "confused",
 			"text": "beepo scap beeboop? ",
 			"boxState": "normal",
-			"speed": 0.05,
-                        "sound": "bf_d",
-			"portrait": "bf"
+			"portrait": "bf",
+			"speed": 0.05
 		},
 		{
 			"expression": "talk",
 			"text": "That isn't important. Would you mind leaving?",
 			"boxState": "normal",
-			"speed": 0.05,
-                        "sound": "foxa_d",
+			"portrait": "port",
+			"speed": 0.05
+		},
+		{
+			"expression": "talk",
+			"text": "...Please?",
+			"boxState": "normal",
+			"speed": 0.11,
 			"portrait": "port"
 		},
 		{
-			"speed": 0.11,
-			"portrait": "port",
-			"boxState": "normal",
-			"expression": "talk",
-                        "sound": "foxa_d",
-			"text": "...Please?"
-		},
-		{
-			"speed": 0.05,
-			"portrait": "bf",
-			"boxState": "normal",
 			"expression": "pissed",
-                        "sound": "bf_d",
-			"text": "Bop Bee Scoboo bep! "
-		},
-		{
-			"speed": 0.05,
-			"portrait": "port",
+			"text": "Bop Bee Scoboo bep! ",
 			"boxState": "normal",
-			"expression": "talk",
-                        "sound": "foxa_d",
-			"text": "I'm sorry if that's rude of me to ask..."
-		},
-		{
 			"speed": 0.05,
-			"portrait": "port",
-			"boxState": "normal",
-			"expression": "talk",
-                        "sound": "foxa_d",
-			"text": "But you REALLY shouldn't be here..."
+			"portrait": "bf"
 		},
 		{
+			"expression": "talk",
+			"text": "I'm sorry if that's rude of me to ask...",
+			"boxState": "normal",
 			"speed": 0.05,
-			"portrait": "bf",
-			"boxState": "normal",
-			"expression": "talk",
-                        "sound": "bf_d",
-			"text": "boop scop bopi boh!!"
+			"portrait": "port"
 		},
 		{
+			"expression": "talk",
+			"text": "But you REALLY shouldn't be here...",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "port"
+		},
+		{
+			"expression": "talk",
+			"text": "boop scop bopi boh!!",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "talk",
+			"text": "...",
+			"boxState": "normal",
 			"speed": 0.29,
-			"portrait": "port",
-			"boxState": "normal",
-			"expression": "talk",
-                        "sound": "foxa_d",
-			"text": "..."
+			"portrait": "port"
 		}
 	]
 }

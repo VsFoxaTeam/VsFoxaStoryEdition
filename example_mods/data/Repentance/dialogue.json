@@ -1,0 +1,151 @@
+{
+	"dialogue": [
+		{
+			"speed": 0.05,
+			"portrait": "updike-serious",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "I Should have done this a long time ago when I had the chance. "
+		},
+		{
+			"speed": 0.065,
+			"portrait": "gun-updike",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "It's time I put an end to this, once and for all. "
+		},
+		{
+			"speed": 0.03,
+			"portrait": "unawarefox2",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "WAIT!!"
+		},
+		{
+			"speed": 0.045,
+			"portrait": "angry-foxa2",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "DON'T SHOOT!"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "gun-updike",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "..."
+		},
+		{
+			"speed": 0.04,
+			"portrait": "unawarefox2",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "Updike, You don't have to do this!"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "gun-updike",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "It's for the greater good."
+		},
+		{
+			"speed": 0.025,
+			"portrait": "unawarefox2",
+			"boxState": "angry",
+			"expression": "confused",
+			"text": "Please, you don't understand!"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "angry-foxa2",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "It's not his fault!"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "gun-updike",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "..."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "unawarefox2",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "\"it's for the greater good\"...?"
+		},
+		{
+			"speed": 0.035,
+			"portrait": "angry-foxa2",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "DON'T YOU SEE THAT YOU ARE THE REAL MONSTER IN THIS?!"
+		},
+		{
+			"speed": 0.165,
+			"portrait": "whit-worried",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "..."
+		},
+		{
+			"speed": 0.13,
+			"portrait": "whit-worried2",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Foxa..."
+		},
+		{
+			"speed": 0.03,
+			"portrait": "angry-foxa1",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "YOU ARE LITERALLY TRYING TO KILL HIM AND I BOTH."
+		},
+		{
+			"speed": 0.04,
+			"portrait": "Angry-foxa1",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "HE NEVER EVEN DID ANYTHING WRONG TO THIS ENVIORMENT. YET YOU STILL CHOOSE TO HUNT HIM DOWN."
+		},
+		{
+			"speed": 0.035,
+			"portrait": "angry-foxa2",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "THAT BLUE HAIRED RAT CAME BY AND MADE HIM ANGRY, JUST AS I WARNED HIM NOT TO COME BY."
+		},
+		{
+			"speed": 0.175,
+			"portrait": "updike-serious",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "..."
+		},
+		{
+			"speed": 0.19,
+			"portrait": "whit-worried2",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "..."
+		},
+		{
+			"speed": 0.14,
+			"portrait": "angry-foxa2",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "So PLEASE..."
+		},
+		{
+			"speed": 0.115,
+			"portrait": "angry-foxa2",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "Let's just talk this out..."
+		}
+	]
+}

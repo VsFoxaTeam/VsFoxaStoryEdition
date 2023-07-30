@@ -8,11 +8,13 @@ function onEvent(name, value1, value2)
 
 		targetAlpha = tonumber(value2);
 		if duration == 0 then
-			setProperty('dad.alpha', targetAlpha);
-			setProperty('iconP2.alpha', targetAlpha);
+			setProperty('trash.alpha', targetAlpha);
+			setProperty('trashgf.alpha', targetAlpha);
+			setProperty('trashsea.alpha', targetAlpha);
 		else
-			doTweenAlpha('dadFadeEventTween', 'dad', targetAlpha, duration, 'linear');
-			doTweenAlpha('iconDadFadeEventTween', 'iconP2', targetAlpha, duration, 'linear');
+			doTweenAlpha('trashFadeEventTween', 'trash', targetAlpha, duration, 'linear');
+			doTweenAlpha('trashgfFadeEventTween', 'trashgf', targetAlpha, duration, 'linear');
+			doTweenAlpha('trashseaFadeEventTween', 'trashsea', targetAlpha, duration, 'linear');
 		end
 		--debugPrint('Event triggered: ', name, duration, targetAlpha);
 	end

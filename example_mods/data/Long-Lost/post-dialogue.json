@@ -1,0 +1,39 @@
+{
+	"dialogue": [
+		{
+			"speed": 0.31,
+			"portrait": "updike",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "..."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "updike-talk",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Fine. "
+		},
+		{
+			"speed": 0.05,
+			"portrait": "updike-talk",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "I will let you two go."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "updike",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "...But if I hear about any more Incidents..."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "updike-serious",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "I will be forced to be less merciful. "
+		}
+	]
+}

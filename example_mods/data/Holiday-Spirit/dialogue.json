@@ -1,0 +1,172 @@
+{
+	"dialogue": [
+		{
+			"speed": 0.05,
+			"portrait": "festive-foxa3",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Hey Whitmore!"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "festive-foxa2",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Sorry I'm a bit late..."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "festive-whittySmirk",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Oh, you actually came."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "festive-foxa2",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Of course I did!"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "festive-foxa3",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "It's the Holidays!"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "festive-whitty1",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Where were you?"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "festive-foxa1",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "I was at the donut shop..."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "festive-foxaCurious",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "I was gonna get us a box of donuts, but..."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "festive-foxa1",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "They closed early..."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "festive-whittySmirk",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Sounds like someone forgot their schedule-"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "festive-foxa1",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "heheheh..."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "festive-foxa2",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Aren't we always around here anyway?-"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "festive-whittyGlee",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": " Ha, i'm just messing with you, Foxa.  "
+		},
+		{
+			"speed": 0.06,
+			"portrait": "festive-foxa1",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "I know, I know..."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "festive-whitty1",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "So, what song do you wanna sing today for the holidays? "
+		},
+		{
+			"speed": 0.05,
+			"portrait": "festive-foxa1",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Well I actually never thought that through."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "festive-foxa2",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "now that I think about it- "
+		},
+		{
+			"speed": 0.05,
+			"portrait": "festive-whit",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "I see. "
+		},
+		{
+			"speed": 0.05,
+			"portrait": "festive-foxa2",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Sorry about that!"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "festive-whittyGlee",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "It's okay. I had one planned anyway. "
+		},
+		{
+			"speed": 0.05,
+			"portrait": "festive-foxaCurious",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Really?"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "festive-whittyGlee",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "yeah. I'll show you, okay? "
+		},
+		{
+			"speed": 0.05,
+			"portrait": "festive-foxa3",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "This is gonna be so much fun!"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "festive-whit",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Here we go. "
+		}
+	]
+}

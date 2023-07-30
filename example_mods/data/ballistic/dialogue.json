@@ -1,0 +1,81 @@
+{
+	"dialogue": [
+		{
+			"expression": "talk",
+			"text": "ENOUGH.",
+			"boxState": "angry",
+			"speed": 0.02,
+			"portrait": "whiteog"
+		},
+		{
+			"expression": "shocked",
+			"text": "",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "talk",
+			"text": "I'M TIRED OF PLAYING YOUR GAMES.",
+			"boxState": "angry",
+			"speed": 0.035,
+			"portrait": "whiteog"
+		},
+		{
+			"expression": "talk",
+			"text": "YOU JUST LIKE TO SEE OTHERS SUFFER.",
+			"boxState": "angry",
+			"speed": 0.03,
+			"portrait": "whiteog"
+		},
+		{
+			"expression": "talk",
+			"text": "TO SEE ME SUFFER. ",
+			"boxState": "angry",
+			"speed": 0.025,
+			"portrait": "whiteog"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "whiteog",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "I'M SO TIRED OF RUNNING, SO TIRED OF TRYING TO HIDE."
+		},
+		{
+			"expression": "talk",
+			"text": "YOU CAUSED HER AND I BOTH TROUBLE, AND BECAUSE OF YOU, BOTH OF US COULD HAVE DIED.",
+			"boxState": "angry",
+			"speed": 0.035,
+			"portrait": "whiteog"
+		},
+		{
+			"expression": "talk",
+			"text": "I'M GOING TO GET RID OF YOU...",
+			"boxState": "angry",
+			"speed": 0.03,
+			"portrait": "whiteog"
+		},
+		{
+			"expression": "talk",
+			"text": "ONCE AND FOR ALL. ",
+			"boxState": "angry",
+			"speed": 0.13,
+			"portrait": "whiteog"
+		},
+		{
+			"speed": 0.02,
+			"portrait": "whiteog",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "I MIGHT EVEN ENJOY WATCHING THAT HACK'S DAUGHTER DIE AS I ATOMIZE YOU BOTH."
+		},
+		{
+			"expression": "talk",
+			"text": "CURSE YOU AND THE FILTH THAT BROUGHT YOU INTO THIS CRUEL WORLD. ",
+			"boxState": "angry",
+			"speed": 0.02,
+			"portrait": "whiteog"
+		}
+	]
+}

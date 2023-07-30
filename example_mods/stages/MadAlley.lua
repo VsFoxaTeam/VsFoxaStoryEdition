@@ -10,5 +10,6 @@ function onCreate()
 	setLuaSpriteScrollFactor('bgg', 1, 0.95);
 	addAnimationByPrefix('bgg','MadFloor','MadAlley Moving',24,true);
 	addLuaSprite('bgg',false)
+	addLuaSprite('funni-effect',true);
 
 end

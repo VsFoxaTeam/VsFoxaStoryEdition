@@ -1,5 +1,5 @@
 {
-	"storyName": "Your New Week",
+	"storyName": "Repentance",
 	"difficulties": "",
 	"hideFreeplay": false,
 	"weekBackground": "whitty",
@@ -13,19 +13,19 @@
 	"hideStoryMode": true,
 	"songs": [
 		[
-			"sacrifice",
-			"foxa",
+			"Repentance",
+			"updike",
 			[
-				255,
-				133,
-				253
+				75,
+				73,
+				93
 			]
 		]
 	],
 	"weekCharacters": [
-		"fox",
-		"bf",
-		"gf"
+		"",
+		"",
+		""
 	],
-	"weekName": "Custom Week"
+	"weekName": ""
 }

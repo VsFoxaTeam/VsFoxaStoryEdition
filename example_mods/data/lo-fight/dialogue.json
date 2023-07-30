@@ -1,0 +1,88 @@
+{
+	"dialogue": [
+		{
+			"expression": "talk",
+			"text": "who-",
+			"boxState": "angry",
+			"speed": 0.05,
+			"portrait": "whit"
+		},
+		{
+			"expression": "talk",
+			"text": "bop boop skep!",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "talk",
+			"text": "oh...",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "whit"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "whit",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "You're with her."
+		},
+		{
+			"expression": "talk",
+			"text": "bep boop.",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": ""
+		},
+		{
+			"expression": "talk",
+			"text": "Would you kindly leave me alone? ",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "whit"
+		},
+		{
+			"expression": "confused",
+			"text": "Beep bope??",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "talk",
+			"text": "I don't want any trouble, Nor do I want anyone seeing me here. ",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "whit"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "whit",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "I haven't sang a song publicly since my music was stolen from me."
+		},
+		{
+			"expression": "talk",
+			"text": "Just leave me alone, and it'll be cool. ",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "whit"
+		},
+		{
+			"expression": "pissed",
+			"text": "bohp behp skeep. ",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": ""
+		},
+		{
+			"expression": "talk",
+			"text": "...",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "annoyedwhit"
+		}
+	]
+}

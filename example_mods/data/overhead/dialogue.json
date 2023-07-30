@@ -1,0 +1,74 @@
+{
+	"dialogue": [
+		{
+			"expression": "talk",
+			"text": "So...",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "annoyedwhit"
+		},
+		{
+			"expression": "talk",
+			"text": "We're playing THAT game. ",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "annoyedwhit"
+		},
+		{
+			"expression": "pissed",
+			"text": "bop beep boop",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "talk",
+			"text": "I see how we're playing your game...",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "annoyedwhit"
+		},
+		{
+			"expression": "talk",
+			"text": "dop hep skeeboop",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": ""
+		},
+		{
+			"expression": "talk",
+			"text": "You're really starting to push some buttons.",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "annoyedwhit"
+		},
+		{
+			"expression": "excited",
+			"text": "bop bee bo!",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "talk",
+			"text": "I'd like to see you die in a ditch instead.",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "annoyedwhit"
+		},
+		{
+			"expression": "pissed",
+			"text": "beep bop!",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "talk",
+			"text": "Don't MAKE me do this.",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "annoyedwhit"
+		}
+	]
+}
