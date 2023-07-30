@@ -66,8 +66,9 @@ class GraphicsSettingsSubState extends BaseOptionsMenu
 		#end
 
 		#if desktop // no need for this at other platforms cuz only desktop has fullscreen as false by default (MAYBE I'LL TRY TO MAKE IT FOR FULLSCREEN MODE TOO)
-		var option:Option = new Option('Screen Resolution', 'Choose your preferred screen resolution.', 'screenRes', 'string', '1280x720',
-			['640x360', '852x480', '960x540', '1280x720', '1920x1080', '3840x2160']);
+		var option:Option = new Option('Screen Resolution',
+			'Choose your preferred screen resolution. \nYou can just resize the game but that just brings up some black borders so this option is handy',
+			'screenRes', 'string', '1280x720', ['640x360', '852x480', '960x540', '1280x720', '1920x1080', '3840x2160']);
 		addOption(option);
 		option.onChange = onChangeScreenRes;
 
@@ -81,15 +82,6 @@ class GraphicsSettingsSubState extends BaseOptionsMenu
 				'imagesPersist', 'bool', false);
 			option.onChange = onChangePersistentData; // Persistent Cached Data changes FlxGraphic.defaultPersist
 			addOption(option); */
-		/*
-			var option:Option = new Option('Persistent Cached Data',
-				'If checked, images loaded will stay in memory\nuntil the game is closed, this increases memory usage,\nbut basically makes reloading times instant.',
-				'imagesPersist',
-				'bool',
-				false);
-			option.onChange = onChangePersistentData; //Persistent Cached Data changes FlxGraphic.defaultPersist
-			addOption(option);
-		 */
 
 		super();
 	}

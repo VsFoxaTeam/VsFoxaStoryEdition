@@ -44,13 +44,13 @@ class VisualsUISubState extends BaseOptionsMenu
 			['Time Left', 'Time Elapsed', 'Song Name', 'Disabled']);
 		addOption(option);
 
-		var option:Option = new Option('Flashing Lights', "Uncheck this if you're sensitive to flashing lights!", 'flashing', 'bool', true);
+		var option:Option = new Option('Flashing Lights', "Uncheck this if you're sensitive to flashing lights,\nespecially Blammed Lights!", 'flashing', 'bool', true);
 		addOption(option);
 
 		var option:Option = new Option('Camera Zooms', "If unchecked, the camera won't zoom in on a beat hit.", 'camZooms', 'bool', true);
 		addOption(option);
 
-		var option:Option = new Option('Score Text Zoom on Hit', "If unchecked, disables the Score text zooming\neverytime you hit a note.", 'scoreZoom',
+		var option:Option = new Option('Score Text Zoom on Hit', "If unchecked, disables the Score text zooming\nevery time you hit a note.", 'scoreZoom',
 			'bool', true);
 		addOption(option);
 

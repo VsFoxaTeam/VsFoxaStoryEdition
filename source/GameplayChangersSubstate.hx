@@ -64,7 +64,7 @@ class GameplayChangersSubstate extends MusicBeatSubstate
 			option.maxValue = 2.5;
 			option.changeValue = 0.1;
 			option.displayFormat = '%vX';
-			optionsArray.push(option); */
+			optionsArray.push(option); implementing this later*/
 
 		var option:GameplayOption = new GameplayOption('Health Gain Multiplier', 'healthgain', 'float', 1);
 		option.scrollSpeed = 2.5;
