@@ -1,3 +1,5 @@
+package;
+
 import flixel.FlxG;
 import flixel.input.keyboard.FlxKey;
 
@@ -75,14 +77,10 @@ class InputFormatter
 				return ",";
 			case PERIOD:
 				return ".";
-			// case SLASH:
-			//	return "/";
 			case GRAVEACCENT:
 				return "`";
 			case LBRACKET:
 				return "[";
-			// case BACKSLASH:
-			//	return "\\";
 			case RBRACKET:
 				return "]";
 			case QUOTE:
@@ -94,7 +92,9 @@ class InputFormatter
 			default:
 				var label:String = '' + key;
 				if (label.toLowerCase() == 'null')
+				{
 					return '---';
+				}
 				return '' + label.charAt(0).toUpperCase() + label.substr(1).toLowerCase();
 		}
 	}

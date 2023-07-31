@@ -104,7 +104,6 @@ class TitleState extends MusicBeatState
 		// Just to load a mod on start up if ya got one. For mods that change the menu music and bg
 		WeekData.loadTheFirstEnabledMod();
 
-		// trace(path, FileSystem.exists(path));
 		titleJSON = Json.parse(Paths.getTextFromFile('images/gfDanceTitle.json'));
 
 		#if CHECK_FOR_UPDATES
@@ -261,7 +260,6 @@ class TitleState extends MusicBeatState
 		{
 			path = "assets/images/titleEnter.png";
 		}
-		// trace(path, FileSystem.exists(path));
 		titleText.frames = FlxAtlasFrames.fromSparrow(BitmapData.fromFile(path), File.getContent(StringTools.replace(path, ".png", ".xml")));
 		#else
 		titleText.frames = Paths.getSparrowAtlas('titleEnter');

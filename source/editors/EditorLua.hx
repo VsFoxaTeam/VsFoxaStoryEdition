@@ -47,14 +47,11 @@ class EditorLua
 		LuaL.openlibs(lua);
 		Lua.init_callbacks(lua);
 
-		// trace('Lua version: ' + Lua.version());
-		// trace("LuaJIT version: " + Lua.versionJIT());
-
 		var result:Dynamic = LuaL.dofile(lua, script);
 		var resultStr:String = Lua.tostring(lua, result);
 		if (resultStr != null && result != 0)
 		{
-			lime.app.Application.current.window.alert(resultStr, 'Error on .LUA script! Go fix it please.');
+			lime.app.Application.current.window.alert(resultStr, 'Error on .LUA script!');
 			trace('Error on .LUA script! ' + resultStr);
 			lua = null;
 			return;
@@ -160,10 +157,14 @@ class EditorLua
 			{
 				var sex = Reflect.getProperty(EditorPlayState.instance, obj).members[index];
 				if (!dontDestroy)
+				{
 					sex.kill();
+				}
 				Reflect.getProperty(EditorPlayState.instance, obj).remove(sex, true);
 				if (!dontDestroy)
+				{
 					sex.destroy();
+				}
 				return;
 			}
 			Reflect.getProperty(EditorPlayState.instance, obj).remove(Reflect.getProperty(EditorPlayState.instance, obj)[index]);
@@ -172,7 +173,9 @@ class EditorLua
 		Lua_helper.add_callback(lua, "getColorFromHex", function(color:String)
 		{
 			if (!color.startsWith('0x'))
+			{
 				color = '0xff' + color;
+			}
 			return Std.parseInt(color);
 		});
 
@@ -230,9 +233,6 @@ class EditorLua
 		var result:Null<Int> = Lua.pcall(lua, args.length, 1, 0);
 		if (result != null && resultIsAllowed(lua, result))
 		{
-			/*var resultStr:String = Lua.tostring(lua, result);
-				var error:String = Lua.tostring(lua, -1);
-				Lua.pop(lua, 1); */
 			if (Lua.type(lua, -1) == Lua.LUA_TSTRING)
 			{
 				var error:String = Lua.tostring(lua, -1);
@@ -288,8 +288,6 @@ class EditorLua
 			return false;
 		}
 
-		// YES! FINALLY IT WORKS
-		// trace('variable: ' + variable + ', ' + result);
 		return (result == 'true');
 	}
 	#end

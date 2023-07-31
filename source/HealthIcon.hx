@@ -27,15 +27,21 @@ class HealthIcon extends FlxSprite
 		super.update(elapsed);
 
 		if (sprTracker != null)
+		{
 			setPosition(sprTracker.x + sprTracker.width + 10, sprTracker.y - 30);
+		}
 	}
 
 	public function swapOldIcon()
 	{
 		if (isOldIcon = !isOldIcon)
+		{
 			changeIcon('bf-old');
+		}
 		else
+		{
 			changeIcon('bf');
+		}
 	}
 
 	private var iconOffsets:Array<Float> = [0, 0];

@@ -29,7 +29,9 @@ class CoolUtil
 	public static function getDifficultyFilePath(num:Null<Int> = null)
 	{
 		if (num == null)
+		{
 			num = PlayState.storyDifficulty;
+		}
 
 		var fileSuffix:String = difficulties[num];
 		if (fileSuffix != defaultDifficulty)
@@ -58,10 +60,14 @@ class CoolUtil
 		var daList:Array<String> = [];
 		#if sys
 		if (FileSystem.exists(path))
+		{
 			daList = File.getContent(path).trim().split('\n');
+		}
 		#else
 		if (Assets.exists(path))
+		{
 			daList = Assets.getText(path).trim().split('\n');
+		}
 		#end
 
 		return [for (i in 0...daList.length) daList[i].trim()];
@@ -147,7 +153,9 @@ class CoolUtil
 	private static function precacheSoundFile(file:Dynamic):Void
 	{
 		if (Assets.exists(file, SOUND) || Assets.exists(file, MUSIC))
+		{
 			Assets.getSound(file, true);
+		}
 	}
 
 	public static function browserLoad(site:String)

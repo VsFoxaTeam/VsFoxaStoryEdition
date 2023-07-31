@@ -45,19 +45,27 @@ class Prompt extends MusicBeatSubstate
 		var op2 = 'CANCEL';
 
 		if (option1 != null)
+		{
 			op1 = option1;
+		}
 		if (option2 != null)
+		{
 			op2 = option2;
+		}
 		buttonAccept = new FlxButton(473.3, 450, op1, function()
 		{
 			if (okc != null)
+			{
 				okc();
+			}
 			close();
 		});
 		buttonNo = new FlxButton(633.3, 450, op2, function()
 		{
 			if (cancelc != null)
+			{
 				cancelc();
+			}
 			close();
 		});
 		super();
@@ -69,7 +77,9 @@ class Prompt extends MusicBeatSubstate
 		if (goAnyway)
 		{
 			if (okc != null)
+			{
 				okc();
+			}
 			close();
 		}
 		else

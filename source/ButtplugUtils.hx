@@ -25,6 +25,7 @@ class ButtplugUtils
 	// 4. If you use this, make sure to credit me in your mod's credits.
 	// Created by God's Drunkest Driver and originally used in the mod "Cracked Catastrophe".
 	public static var _request:haxe.Http = new haxe.Http("http://localhost:6969/api/Device/List"); // this is the request to get the list of devices, basically check if the server is running
+
 	public static var vibrateRequest:haxe.Http = new haxe.Http("http://localhost:6969/api/Device/Command");
 	public static var stopRequest:haxe.Http = new haxe.Http("http://localhost:6969/api/Device/StopDeviceCmd");
 	public static var payloadRequest:haxe.Http = new haxe.Http("http://localhost:6969/api/Device/Command");
@@ -328,7 +329,9 @@ class ButtplugUtils
 		// it'll stop the device from vibrating
 		stopRequest.request();
 		if (emergency == true)
+		{
 			emergencyStopActive = true;
+		}
 	}
 
 	/**
@@ -338,9 +341,13 @@ class ButtplugUtils
 	public static function set_intensity(value:Int) // thanks to Cheemsandfriends for this function!
 	{
 		if (value < 0)
+		{
 			value = 0;
+		}
 		if (value > 100)
+		{
 			value = 100;
+		}
 		intensity = value;
 		vibrateRequest.url = "http://localhost:6969/api/Device/VibrateCmd/" + deviceEncoded + '/$intensity';
 		return value;
@@ -365,6 +372,7 @@ class ButtplugUtils
 		}
 		catch (e)
 		{
+			// nothing
 		}
 
 		try
@@ -377,6 +385,7 @@ class ButtplugUtils
 		}
 		catch (e)
 		{
+			// nothing
 		}
 
 		if (toywebbridgeRunning == false || intifaceRunning == false)

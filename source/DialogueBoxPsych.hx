@@ -1,5 +1,6 @@
 package;
 
+import flixel.system.frontEnds.DebuggerFrontEnd;
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.addons.text.FlxTypeText;
@@ -52,8 +53,6 @@ typedef DialogueLine =
 	var boxState:Null<String>;
 	var speed:Null<Float>;
 	var sound:Null<String>;
-	// var skipdelay:Null<Int>;
-	// var append:Null<Bool>; //thinkin bout having some rpg type text shit.
 }
 
 class DialogueCharacter extends FlxSprite
@@ -158,12 +157,10 @@ class DialogueCharacter extends FlxSprite
 			if (playIdle)
 			{
 				offset.set(anim.idle_offsets[0], anim.idle_offsets[1]);
-				// trace('Setting idle offsets: ' + anim.idle_offsets);
 			}
 			else
 			{
 				offset.set(anim.loop_offsets[0], anim.loop_offsets[1]);
-				// trace('Setting loop offsets: ' + anim.loop_offsets);
 			}
 		}
 		else
@@ -206,8 +203,6 @@ class DialogueBoxPsych extends FlxSpriteGroup
 	var textBoxTypes:Array<String> = ['normal', 'angry'];
 
 	var curCharacter:String = "";
-
-	// var charPositionList:Array<String> = ['left', 'center', 'right'];
 
 	public function new(dialogueList:DialogueFile, ?song:String = null)
 	{
@@ -329,7 +324,9 @@ class DialogueBoxPsych extends FlxSpriteGroup
 		{
 			bgFade.alpha += 0.5 * elapsed;
 			if (bgFade.alpha > 0.5)
+			{
 				bgFade.alpha = 0.5;
+			}
 
 			if (PlayerSettings.player1.controls.ACCEPT)
 			{
@@ -650,6 +647,8 @@ class DialogueBoxPsych extends FlxSpriteGroup
 		}
 
 		if (!box.flipX)
+		{
 			box.offset.y += 10;
+		}
 	}
 }

@@ -81,9 +81,6 @@ class FunkinLua
 		LuaL.openlibs(lua);
 		Lua.init_callbacks(lua);
 
-		// trace('Lua version: ' + Lua.version());
-		// trace("LuaJIT version: " + Lua.versionJIT());
-
 		var result:Dynamic = LuaL.dofile(lua, script);
 		var resultStr:String = Lua.tostring(lua, result);
 		if (resultStr != null && result != 0)
@@ -307,8 +304,6 @@ class FunkinLua
 					{
 						if (luaInstance.scriptName == cervix)
 						{
-							// luaTrace('The script "' + cervix + '" is already running!');
-
 							PlayState.instance.luaArray.remove(luaInstance);
 							return;
 						}
@@ -899,7 +894,6 @@ class FunkinLua
 					PlayState.instance.modchartTimers.remove(tag);
 				}
 				PlayState.instance.callOnLuas('onTimerCompleted', [tag, tmr.loops, tmr.loopsLeft]);
-				// trace('Timer Completed: ' + tag);
 			}, loops));
 		});
 		Lua_helper.add_callback(lua, "cancelTimer", function(tag:String)
@@ -1127,7 +1121,6 @@ class FunkinLua
 			var value1:String = arg1;
 			var value2:String = arg2;
 			PlayState.instance.triggerEventNote(name, value1, value2);
-			// trace('Triggered event: ' + name + ', ' + value1 + ', ' + value2);
 		});
 
 		Lua_helper.add_callback(lua, "startCountdown", function(variable:String)
@@ -1503,7 +1496,6 @@ class FunkinLua
 						}
 					}
 					shit.wasAdded = true;
-					// trace('added a thing: ' + tag);
 				}
 			}
 		});
@@ -2202,7 +2194,6 @@ class FunkinLua
 				{
 					getInstance().add(shit);
 					shit.wasAdded = true;
-					// trace('added a thing: ' + tag);
 				}
 			}
 		});
@@ -2954,8 +2945,6 @@ class FunkinLua
 			return false;
 		}
 
-		// YES! FINALLY IT WORKS
-		// trace('variable: ' + variable + ', ' + result);
 		return (result == 'true');
 	}
 	#end

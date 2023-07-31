@@ -105,7 +105,6 @@ class MusicBeatState extends FlxUIState
 				{
 					FlxG.resetState();
 				};
-				// trace('resetted');
 			}
 			else
 			{

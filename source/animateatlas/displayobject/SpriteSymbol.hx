@@ -328,12 +328,9 @@ class SpriteSymbol extends Sprite
 				blur.blurX = data.BlurFilter.blurX;
 				blur.blurY = data.BlurFilter.blurY;
 				blur.quality = data.BlurFilter.quality;
-				// _bitmap.bitmapData.applyFilter(_bitmap.bitmapData,new Rectangle(0,0,_bitmap.bitmapData.width,_bitmap.bitmapData.height),new Point(0,0),blur);
-				// filters.push(blur);
 			}
 			if (data.GlowFilter != null)
 			{
-				// trace('GLOW' + data.GlowFilter);
 				// glow = new GlowFilter();
 				// glow.blurX = data.GlowFilter.blurX;
 				// glow.blurY = data.GlowFilter.blurY;

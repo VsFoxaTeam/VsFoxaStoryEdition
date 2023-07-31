@@ -105,7 +105,6 @@ class ModsMenuState extends MusicBeatState
 					if (!Paths.ignoreModFolders.contains(modSplit[0].toLowerCase()))
 					{
 						addToModsList([modSplit[0], (modSplit[1] == '1')]);
-						// trace(modSplit[1]);
 					}
 				}
 			}
@@ -359,20 +358,12 @@ class ModsMenuState extends MusicBeatState
 		super.create();
 	}
 
-	/*function getIntArray(max:Int):Array<Int>{
-		var arr:Array<Int> = [];
-		for (i in 0...max) {
-			arr.push(i);
-		}
-		return arr;
-	}*/
 	function addToModsList(values:Array<Dynamic>)
 	{
 		for (i in 0...modsList.length)
 		{
 			if (modsList[i][0] == values[0])
 			{
-				// trace(modsList[i][0], values[0]);
 				return;
 			}
 		}

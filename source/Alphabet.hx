@@ -231,8 +231,6 @@ class Alphabet extends FlxSpriteGroup
 		_finalText = text;
 		doSplitWords();
 
-		// trace(arrayShit);
-
 		if (soundDialog == null)
 		{
 			Alphabet.setDialogueSound();

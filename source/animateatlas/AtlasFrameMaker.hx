@@ -62,7 +62,6 @@ class AtlasFrameMaker extends FlxFramesCollection
 		if (_excludeArray == null)
 		{
 			_excludeArray = t.getFrameLabels();
-			// trace('creating all anims');
 		}
 		trace('Creating: ' + _excludeArray);
 
@@ -120,7 +119,6 @@ class AtlasFrameMaker extends FlxFramesCollection
 			theFrame.sourceSize.set(frameSize.x, frameSize.y);
 			theFrame.frame = new FlxRect(0, 0, bitMapArray[i].width, bitMapArray[i].height);
 			daFramez.push(theFrame);
-			// trace(daFramez);
 		}
 		return daFramez;
 	}

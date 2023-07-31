@@ -1,3 +1,5 @@
+package;
+
 #if web
 import openfl.net.NetConnection;
 import openfl.net.NetStream;
@@ -80,9 +82,13 @@ class FlxVideo extends FlxBasic
 		var appDir = "file:///" + Sys.getCwd() + "/";
 
 		if (fileName.indexOf(":") == -1) // Not a path
+			{
 			pDir = appDir;
+			}
 		else if (fileName.indexOf("file://") == -1 || fileName.indexOf("http") == -1) // C:, D: etc? ..missing "file:///" ?
+			{
 			pDir = "file:///";
+			}
 
 		return pDir + fileName;
 	}

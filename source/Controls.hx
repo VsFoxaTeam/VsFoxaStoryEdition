@@ -389,7 +389,9 @@ class Controls extends FlxActionSet
 	{
 		#if debug
 		if (!byName.exists(name))
+		{
 			throw 'Invalid name: $name';
+		}
 		#end
 		return byName[name].check();
 	}
@@ -491,21 +493,31 @@ class Controls extends FlxActionSet
 	public function replaceBinding(control:Control, device:Device, ?toAdd:Int, ?toRemove:Int)
 	{
 		if (toAdd == toRemove)
+		{
 			return;
+		}
 
 		switch (device)
 		{
 			case Keys:
 				if (toRemove != null)
+				{
 					unbindKeys(control, [toRemove]);
+				}
 				if (toAdd != null)
+				{
 					bindKeys(control, [toAdd]);
+				}
 
 			case Gamepad(id):
 				if (toRemove != null)
+				{
 					unbindButtons(control, id, [toRemove]);
+				}
 				if (toAdd != null)
+				{
 					bindButtons(control, id, [toAdd]);
+				}
 		}
 	}
 
@@ -517,7 +529,9 @@ class Controls extends FlxActionSet
 			for (input in action.inputs)
 			{
 				if (device == null || isDevice(input, device))
+				{
 					byName[name].add(cast input);
+				}
 			}
 		}
 		#else
@@ -527,7 +541,9 @@ class Controls extends FlxActionSet
 			for (input in action.inputs)
 			{
 				if (device == null || isDevice(input, device))
+				{
 					byName[name].add(cast input);
+				}
 			}
 		}
 		#end
@@ -584,7 +600,9 @@ class Controls extends FlxActionSet
 		for (i in 0...copyKeys.length)
 		{
 			if (i == NONE)
+			{
 				copyKeys.remove(i);
+			}
 		}
 
 		#if (haxe >= "4.0.0")
@@ -604,7 +622,9 @@ class Controls extends FlxActionSet
 		for (i in 0...copyKeys.length)
 		{
 			if (i == NONE)
+			{
 				copyKeys.remove(i);
+			}
 		}
 
 		#if (haxe >= "4.0.0")
@@ -617,8 +637,12 @@ class Controls extends FlxActionSet
 	inline static function addKeys(action:FlxActionDigital, keys:Array<FlxKey>, state:FlxInputState)
 	{
 		for (key in keys)
+		{
 			if (key != NONE)
+			{
 				action.addKey(key, state);
+			}
+		}
 	}
 
 	static function removeKeys(action:FlxActionDigital, keys:Array<FlxKey>)
@@ -628,14 +652,18 @@ class Controls extends FlxActionSet
 		{
 			var input = action.inputs[i];
 			if (input.device == KEYBOARD && keys.indexOf(cast input.inputID) != -1)
+			{
 				action.remove(input);
+			}
 		}
 	}
 
 	public function setKeyboardScheme(scheme:KeyboardScheme, reset = true)
 	{
 		if (reset)
+		{
 			removeKeyboard();
+		}
 
 		keyboardScheme = scheme;
 		var keysMap = ClientPrefs.keyBinds;
@@ -743,7 +771,9 @@ class Controls extends FlxActionSet
 			{
 				var input = action.inputs[i];
 				if (input.device == KEYBOARD)
+				{
 					action.remove(input);
+				}
 			}
 		}
 	}
@@ -754,10 +784,14 @@ class Controls extends FlxActionSet
 
 		#if (haxe >= "4.0.0")
 		for (control => buttons in buttonMap)
+		{
 			inline bindButtons(control, id, buttons);
+		}
 		#else
 		for (control in buttonMap.keys())
+		{
 			bindButtons(control, id, buttonMap[control]);
+		}
 		#end
 	}
 
@@ -767,10 +801,14 @@ class Controls extends FlxActionSet
 
 		#if (haxe >= "4.0.0")
 		for (control => buttons in buttonMap)
+		{
 			inline bindButtons(control, id, buttons);
+		}
 		#else
 		for (control in buttonMap.keys())
+		{
 			bindButtons(control, id, buttonMap[control]);
+		}
 		#end
 	}
 
@@ -783,7 +821,9 @@ class Controls extends FlxActionSet
 			{
 				var input = action.inputs[i];
 				if (input.device == GAMEPAD && (deviceID == FlxInputDeviceID.ALL || input.deviceID == deviceID))
+				{
 					action.remove(input);
+				}
 			}
 		}
 

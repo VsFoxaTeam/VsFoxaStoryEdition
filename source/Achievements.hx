@@ -243,14 +243,12 @@ class Achievements
 				else // Sort mod loading order based on modsList.txt file
 				{
 					var path = haxe.io.Path.join([Paths.mods(), splitName[0]]);
-					// trace('trying to push: ' + splitName[0]);
 					if (sys.FileSystem.isDirectory(path)
 						&& !Paths.ignoreModFolders.contains(splitName[0])
 						&& !disabledMods.contains(splitName[0])
 						&& !directories.contains(path + '/'))
 					{
 						directories.push(path + '/');
-						// trace('pushed Directory: ' + splitName[0]);
 					}
 				}
 			}
@@ -263,7 +261,6 @@ class Achievements
 			if (!disabledMods.contains(folder) && !directories.contains(pathThing))
 			{
 				directories.push(pathThing);
-				// trace('pushed Directory: ' + folder);
 			}
 		}
 
@@ -271,7 +268,6 @@ class Achievements
 		{
 			var directory:String = directories[i] + 'achievements/';
 
-			// trace(directory);
 			if (FileSystem.exists(directory))
 			{
 				var listOfAchievements:Array<String> = CoolUtil.coolTextFile(directory + 'achievementList.txt');
@@ -284,8 +280,6 @@ class Achievements
 					{
 						loadedAchievements.set(achievement, getAchievementInfo(path));
 					}
-
-					// trace(path);
 				}
 
 				for (file in FileSystem.readDirectory(directory))
@@ -297,15 +291,12 @@ class Achievements
 					{
 						loadedAchievements.set(cutName, getAchievementInfo(path));
 					}
-
-					// trace(file);
 				}
 			}
 		}
 
 		for (json in loadedAchievements)
 		{
-			// trace(json);
 			achievementsStuff.push([json.name, json.description, json.icon, json.unlocksAfter, json.hidden]);
 		}
 		#end
@@ -388,7 +379,9 @@ class AttachedAchievement extends FlxSprite
 	override function update(elapsed:Float)
 	{
 		if (sprTracker != null)
+		{
 			setPosition(sprTracker.x - 130, sprTracker.y + 25);
+		}
 
 		super.update(elapsed);
 	}

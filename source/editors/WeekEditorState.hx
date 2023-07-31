@@ -820,9 +820,13 @@ class WeekEditorFreeplayState extends MusicBeatState
 		curSelected += change;
 
 		if (curSelected < 0)
+		{
 			curSelected = weekFile.songs.length - 1;
+		}
 		if (curSelected >= weekFile.songs.length)
+		{
 			curSelected = 0;
+		}
 
 		var bullShit:Int = 0;
 		for (i in 0...iconArray.length)
@@ -838,15 +842,12 @@ class WeekEditorFreeplayState extends MusicBeatState
 			bullShit++;
 
 			item.alpha = 0.6;
-			// item.setGraphicSize(Std.int(item.width * 0.8));
 
 			if (item.targetY == 0)
 			{
 				item.alpha = 1;
-				// item.setGraphicSize(Std.int(item.width));
 			}
 		}
-		trace(weekFile.songs[curSelected]);
 		iconInputText.text = weekFile.songs[curSelected][1];
 		bgColorStepperR.value = Math.round(weekFile.songs[curSelected][2][0]);
 		bgColorStepperG.value = Math.round(weekFile.songs[curSelected][2][1]);

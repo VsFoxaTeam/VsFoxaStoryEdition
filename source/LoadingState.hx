@@ -60,11 +60,7 @@ class LoadingState extends MusicBeatState
 		{
 			callbacks = new MultiCallback(onLoad);
 			var introComplete = callbacks.add("introComplete");
-			/*if (PlayState.SONG != null) {
-				checkLoadSong(getSongPath());
-				if (PlayState.SONG.needsVoices)
-					checkLoadSong(getVocalPath());
-			}*/
+
 			checkLibrary("shared");
 			if (directory != null && directory.length > 0 && directory != 'shared')
 			{
@@ -83,10 +79,7 @@ class LoadingState extends MusicBeatState
 		{
 			var library = Assets.getLibrary("songs");
 			final symbolPath = path.split(":").pop();
-			// @:privateAccess
-			// library.types.set(symbolPath, SOUND);
-			// @:privateAccess
-			// library.pathGroups.set(symbolPath, [library.__cacheBreak(symbolPath)]);
+
 			var callback = callbacks.add("song:" + path);
 			Assets.loadSound(path).onComplete(function(_)
 			{
@@ -102,7 +95,9 @@ class LoadingState extends MusicBeatState
 		{
 			@:privateAccess
 			if (!LimeAssets.libraryPaths.exists(library))
+			{
 				throw "Missing library: " + library;
+			}
 
 			var callback = callbacks.add("library:" + library);
 			Assets.loadLibrary(library).onComplete(function(_)
@@ -133,7 +128,9 @@ class LoadingState extends MusicBeatState
 	function onLoad()
 	{
 		if (stopMusic && FlxG.sound.music != null)
+		{
 			FlxG.sound.music.stop();
+		}
 
 		MusicBeatState.switchState(target);
 	}
@@ -301,17 +298,23 @@ class MultiCallback
 				numRemaining--;
 
 				if (logId != null)
+				{
 					log('fired $id, $numRemaining remaining');
+				}
 
 				if (numRemaining == 0)
 				{
 					if (logId != null)
+					{
 						log('all callbacks fired');
+					}
 					callback();
 				}
 			}
 			else
+			{
 				log('already fired $id');
+			}
 		}
 		unfired[id] = func;
 		return func;
@@ -320,7 +323,9 @@ class MultiCallback
 	inline function log(msg):Void
 	{
 		if (logId != null)
+		{
 			trace('$logId: $msg');
+		}
 	}
 
 	public function getFired()

@@ -27,7 +27,6 @@ class BuildingEffect
 
 	public function addAlpha(alpha:Float)
 	{
-		trace(shader.alphaShit.value[0]);
 		shader.alphaShit.value[0] += alpha;
 	}
 

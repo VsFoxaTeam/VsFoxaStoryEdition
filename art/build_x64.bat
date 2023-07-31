@@ -2,7 +2,7 @@
 color 0a
 cd ..
 echo BUILDING GAME
-lime build windows -release
+lime build windows
 echo.
 echo done.
 pause

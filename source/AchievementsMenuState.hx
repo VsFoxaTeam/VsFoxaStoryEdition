@@ -110,9 +110,13 @@ class AchievementsMenuState extends MusicBeatState
 	{
 		curSelected += change;
 		if (curSelected < 0)
+		{
 			curSelected = options.length - 1;
+		}
 		if (curSelected >= options.length)
+		{
 			curSelected = 0;
+		}
 
 		var bullShit:Int = 0;
 
