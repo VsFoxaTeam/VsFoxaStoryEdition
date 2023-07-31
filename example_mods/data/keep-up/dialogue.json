@@ -1,0 +1,95 @@
+{
+	"dialogue": [
+		{
+			"expression": "talk",
+			"text": "...Huh? ",
+			"boxState": "normal",
+			"portrait": "port",
+			"speed": 0.05
+		},
+		{
+			"expression": "pissed",
+			"text": "bidi beep.",
+			"boxState": "normal",
+			"portrait": "bf",
+			"speed": 0.05
+		},
+		{
+			"expression": "talk",
+			"text": "Ah... it's you two...",
+			"boxState": "normal",
+			"portrait": "port",
+			"speed": 0.05
+		},
+		{
+			"expression": "excited",
+			"text": "Beep. ",
+			"boxState": "normal",
+			"portrait": "bf",
+			"speed": 0.05
+		},
+		{
+			"expression": "talk",
+			"text": "...Listen, I know you're here to rap battle him, but I'm afraid that I can't let you do that...",
+			"boxState": "normal",
+			"portrait": "port",
+			"speed": 0.05
+		},
+		{
+			"expression": "confused",
+			"text": "beepo scap beeboop? ",
+			"boxState": "normal",
+			"portrait": "bf",
+			"speed": 0.05
+		},
+		{
+			"expression": "talk",
+			"text": "That isn't even important. Would you mind leaving?",
+			"boxState": "normal",
+			"portrait": "port",
+			"speed": 0.05
+		},
+		{
+			"expression": "talk",
+			"text": "...Please?",
+			"boxState": "normal",
+			"speed": 0.11,
+			"portrait": "port"
+		},
+		{
+			"expression": "pissed",
+			"text": "bop bee scoboo bep! ",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "talk",
+			"text": "I'm sorry if that's rude of me to ask...",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "port"
+		},
+		{
+			"expression": "talk",
+			"text": "But you REALLY shouldn't be here...",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "port"
+		},
+		{
+			"expression": "talk",
+			"text": "boop scop bopi boh!!",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "talk",
+			"text": "...",
+			"boxState": "normal",
+			"speed": 0.29,
+			"portrait": "port"
+		}
+	]
+}

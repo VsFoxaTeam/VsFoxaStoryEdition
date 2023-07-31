@@ -1,3 +1,0 @@
-<vbox style="padding: 5px;">
-    <button text="Don't Click Me!" onclick="this.text='I warned you.'" style="font-size: 24px;" />
-</vbox>

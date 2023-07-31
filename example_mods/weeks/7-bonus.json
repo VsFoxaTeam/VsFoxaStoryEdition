@@ -1,0 +1,31 @@
+{
+	"storyName": "freeplay",
+	"difficulties": "",
+	"hideFreeplay": false,
+	"weekBackground": "whitty",
+	"weekBefore": "tutorial",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"startUnlocked": true,
+	"hideStoryMode": true,
+	"songs": [
+		[
+			"sacrifice",
+			"foxa",
+			[
+				255,
+				133,
+				253
+			]
+		]
+	],
+	"weekCharacters": [
+		"fox",
+		"bf",
+		"gf"
+	],
+	"weekName": "Foxa Bonus"
+}

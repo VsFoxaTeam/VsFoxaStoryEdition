@@ -1,0 +1,179 @@
+{
+	"dialogue": [
+		{
+			"expression": "",
+			"text": "So...",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "port"
+		},
+		{
+			"expression": "",
+			"text": "You really AREN'T going to leave.",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "angy"
+		},
+		{
+			"expression": "talk",
+			"text": "Are you?",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "angy"
+		},
+		{
+			"expression": "pissed",
+			"text": "brep bappity boop.",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "talk",
+			"text": "...",
+			"boxState": "normal",
+			"speed": 0.06,
+			"portrait": "angy"
+		},
+		{
+			"expression": "talk",
+			"text": "You know...",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "port"
+		},
+		{
+			"expression": "talk",
+			"text": "You're REALLY making this harder than it needs to be...",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "angy"
+		},
+		{
+			"expression": "talk",
+			"text": "bip bep skoo de boop",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "excited",
+			"text": "bepoobe skoop!!",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "talk",
+			"text": "...Don't make me fight you.",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "port"
+		},
+		{
+			"expression": "talk",
+			"text": "I really DON'T want to do this tonight...",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "angy"
+		},
+		{
+			"expression": "talk",
+			"text": "bop beep.",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "talk",
+			"text": "Please...",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "port"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "port",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "You don't understand."
+		},
+		{
+			"expression": "talk",
+			"text": "Just go home already...",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "port"
+		},
+		{
+			"expression": "pissed",
+			"text": "bope bepe!!",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "talk",
+			"text": "Alright, listen here, you blue haired Twit...",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "angy"
+		},
+		{
+			"expression": "talk",
+			"text": "If you DON'T leave...",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "port"
+		},
+		{
+			"expression": "talk",
+			"text": "I'll make sure you regret being born.",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "angy"
+		},
+		{
+			"expression": "shocked",
+			"text": "",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "talk",
+			"text": "Mark my words...",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "angy"
+		},
+		{
+			"expression": "pissed",
+			"text": "beep bop bippity boop.",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "talk",
+			"text": "...",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "port"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "port",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "So, it's like that, huh?"
+		},
+		{
+			"expression": "talk",
+			"text": "Well, I guess I have no choice. ",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "angy"
+		}
+	]
+}

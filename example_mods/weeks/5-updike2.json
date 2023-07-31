@@ -1,0 +1,31 @@
+{
+	"storyName": "Repentance - Remose Act 2",
+	"difficulties": "",
+	"hideFreeplay": false,
+	"weekBackground": "whitty",
+	"weekBefore": "tutorial",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"startUnlocked": true,
+	"hideStoryMode": true,
+	"songs": [
+		[
+			"Repentance",
+			"updike",
+			[
+				75,
+				73,
+				93
+			]
+		]
+	],
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"weekName": "Updike 2"
+}

@@ -1,0 +1,49 @@
+{
+	"storyName": "Back Alley Blitz (feat. Whitmore)",
+	"difficulties": "",
+	"hideFreeplay": false,
+	"weekBackground": "whitty",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"weekBefore": "",
+	"startUnlocked": true,
+	"weekCharacters": [
+		"WhiteOg",
+		"bf",
+		"gf"
+	],
+	"songs": [
+		[
+			"lo-fight",
+			"Whitty",
+			[
+				255,
+				113,
+				55
+			]
+		],
+		[
+			"overhead",
+			"Whitty",
+			[
+				255,
+				73,
+				55
+			]
+		],
+		[
+			"ballistic",
+			"ballisticwhitty",
+			[
+				115,
+				33,
+				55
+			]
+		]
+	],
+	"hideStoryMode": false,
+	"weekName": "Whitty Week"
+}

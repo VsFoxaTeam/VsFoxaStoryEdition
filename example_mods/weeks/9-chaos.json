@@ -1,0 +1,25 @@
+{
+	"storyName": "INSANITY HELLHOLE ",
+	"hideFreeplay": true,
+	"weekBackground": "bruh",
+	"weekBefore": "",
+	"startUnlocked": true,
+	"weekCharacters": [
+		"",
+		"foxa-sad",
+		""
+	],
+	"songs": [
+		[
+			"phantasm",
+			"foxa-mad",
+			[
+				66,
+				0,
+				33
+			]
+		]
+	],
+	"hideStoryMode": true,
+	"weekName": "Phantasm Cover"
+}

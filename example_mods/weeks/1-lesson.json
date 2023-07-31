@@ -1,0 +1,40 @@
+{
+	"storyName": "Before the Blitz - Foxa's Lesson with Whitmore",
+	"difficulties": "",
+	"hideFreeplay": false,
+	"weekBackground": "whitty",
+	"weekBefore": "tutorial",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"startUnlocked": true,
+	"hideStoryMode": false,
+	"songs": [
+		[
+			"Lesson-lo-fight",
+			"whittyhappy",
+			[
+				186,
+				153,
+				135
+			]
+		],
+		[
+			"Lesson-overhead",
+			"whittyhappy",
+			[
+				186,
+				153,
+				135
+			]
+		]
+	],
+	"weekCharacters": [
+		"WhiteOg",
+		"fox",
+		""
+	],
+	"weekName": "Lesson Week"
+}

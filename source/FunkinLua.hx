@@ -386,6 +386,28 @@ class FunkinLua
 			#end
 		});
 
+		Lua_helper.add_callback(lua, "getTextFromFile", function(path:String, ?ignoreModFolders:Bool = false)
+		{
+			return Paths.getTextFromFile(path, ignoreModFolders);
+		});
+		Lua_helper.add_callback(lua, "directoryFileList", function(folder:String)
+		{
+			var list:Array<String> = [];
+			#if sys
+			if (FileSystem.exists(folder))
+			{
+				for (folder in FileSystem.readDirectory(folder))
+				{
+					if (!list.contains(folder))
+					{
+						list.push(folder);
+					}
+				}
+			}
+			#end
+			return list;
+		});
+
 		Lua_helper.add_callback(lua, "loadSong", function(?name:String = null, ?difficultyNum:Int = -1) // i love dave and bambi EXPUNGED PEAK
 		{
 			if (name == null || name.length < 1)
@@ -3095,8 +3117,28 @@ class HScript
 		});
 	}
 
+	// hello cherif =)
+	public static function getImports(code:String):Array<String>
+	{
+		var imports:Array<String> = [];
+		var re:EReg = ~/^(?:(?!"|')(?:[^"']|\.(?!"|'))*?)import\s+([\w.]+);$/m;
+		while (re.match(code))
+		{
+			imports.push(re.matched(1));
+			code = re.matchedRight();
+		}
+		return imports;
+	}
+
 	public function execute(codeToRun:String, ?funcToRun:String = null, ?funcArgs:Array<Dynamic>):Dynamic
 	{
+		for (imports in getImports(codeToRun))
+		{
+			var splitted:Array<String> = imports.split('.');
+			interp.variables.set(splitted[splitted.length - 1], Type.resolveClass(imports));
+		}
+		codeToRun = ~/^(?:(?!"|')(?:[^"']|\.(?!"|'))*?)import\s+([\w.]+);$/mg.replace(codeToRun, ""); // delete all imports
+
 		@:privateAccess
 		HScript.parser.line = 1;
 		HScript.parser.allowTypes = true;
@@ -3106,10 +3148,8 @@ class HScript
 			var value:Dynamic = interp.execute(HScript.parser.parseString(codeToRun));
 			if (funcToRun != null)
 			{
-				// trace('Executing $funcToRun');
 				if (interp.variables.exists(funcToRun))
 				{
-					// trace('$funcToRun exists, executing...');
 					if (funcArgs == null)
 						funcArgs = [];
 					value = Reflect.callMethod(null, interp.variables.get(funcToRun), funcArgs);

@@ -116,7 +116,9 @@
 
 	<!-- assets path="CHANGELOG.md" rename='changelog.txt' -->
 
-	<assets path="assets/fonts" />
+	<assets path="assets/fonts" embed='false' />
+
+	<assets path="fanart" embed='false' />
 
 	<!-- _______________________________ Errors ______________________________ -->
 
@@ -162,7 +164,7 @@
 	<!--Optimise inputs, be careful you will get null errors if you don't use conditionals in your game-->
 	<!-- <haxedef name="FLX_NO_MOUSE" if="mobile" /> -->
 	<!-- <haxedef name="FLX_NO_KEYBOARD" if="mobile" /> -->
-	<!-- <haxedef name="FLX_NO_TOUCH" if="desktop" /> -->
+	<haxedef name="FLX_NO_TOUCH" if="desktop" />
 	<!--<haxedef name="FLX_NO_GAMEPAD" />-->
 
 	<!--Disable the Flixel core sound tray-->
@@ -187,11 +189,13 @@
 	<haxedef name="HXCPP_CHECK_POINTER" if="CRASH_HANDLER" />
 	<haxedef name="HXCPP_STACK_LINE" if="CRASH_HANDLER" />
 	<haxedef name="HXCPP_STACK_TRACE" if="CRASH_HANDLER" />
+	<haxedef name="HXCPP_DEBUG_LINK" if="CRASH_HANDLER" />
 	<haxedef name='no-deprecation-warnings' />
 
 	<!--Macro fixes-->
 	<haxeflag name="--macro" value="allowPackage('flash')" />
 	<haxeflag name="--macro" value="include('my.pack')" />
+	<haxeflag name="-dce" value="no" />
 
 	<!-- ________________________ Import Platform-Specific Stuff _____________________________ -->
 
