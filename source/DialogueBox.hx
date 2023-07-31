@@ -14,6 +14,7 @@ using StringTools;
 
 class DialogueBox extends FlxSpriteGroup
 {
+	// IF YOURE LOOKING FOR THE DIALOGUE BOX USED EVERYWHERE ELSE CHECK DIALOGUEBOXPSYCH
 	var box:FlxSprite;
 
 	var curCharacter:String = '';
@@ -94,7 +95,9 @@ class DialogueBox extends FlxSpriteGroup
 		this.dialogueList = dialogueList;
 
 		if (!hasDialog)
+		{
 			return;
+		}
 
 		portraitLeft = new FlxSprite(-20, 40);
 		portraitLeft.frames = Paths.getSparrowAtlas('weeb/senpaiPortrait');
@@ -145,8 +148,6 @@ class DialogueBox extends FlxSpriteGroup
 		add(swagDialogue);
 
 		dialogue = new Alphabet(0, 80, "", false, true);
-		// dialogue.x = 90;
-		// add(dialogue);
 	}
 
 	var dialogueOpened:Bool = false;
@@ -242,11 +243,6 @@ class DialogueBox extends FlxSpriteGroup
 	function startDialogue():Void
 	{
 		cleanDialog();
-		// var theDialog:Alphabet = new Alphabet(0, 70, dialogueList[0], false, true);
-		// dialogue = theDialog;
-		// add(theDialog);
-
-		// swagDialogue.text = ;
 		swagDialogue.resetText(dialogueList[0]);
 		swagDialogue.start(0.04, true);
 		swagDialogue.completeCallback = function()

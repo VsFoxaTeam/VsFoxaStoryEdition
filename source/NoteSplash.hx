@@ -6,6 +6,7 @@ import flixel.graphics.frames.FlxAtlasFrames;
 
 class NoteSplash extends FlxSprite
 {
+	// guh?!?!? keoiki?!?!?!?!?!?!
 	public var colorSwap:ColorSwap = null;
 
 	private var idleAnim:String;
@@ -17,7 +18,9 @@ class NoteSplash extends FlxSprite
 
 		var skin:String = 'noteSplashes';
 		if (PlayState.SONG.splashSkin != null && PlayState.SONG.splashSkin.length > 0)
+		{
 			skin = PlayState.SONG.splashSkin;
+		}
 
 		loadAnims(skin);
 
@@ -52,7 +55,9 @@ class NoteSplash extends FlxSprite
 		var animNum:Int = FlxG.random.int(1, 2);
 		animation.play('note' + note + '-' + animNum, true);
 		if (animation.curAnim != null)
+		{
 			animation.curAnim.frameRate = 24 + FlxG.random.int(-2, 2);
+		}
 	}
 
 	function loadAnims(skin:String)
@@ -70,8 +75,12 @@ class NoteSplash extends FlxSprite
 	override function update(elapsed:Float)
 	{
 		if (animation.curAnim != null)
+		{
 			if (animation.curAnim.finished)
+			{
 				kill();
+			}
+		}
 
 		super.update(elapsed);
 	}

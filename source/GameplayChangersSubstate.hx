@@ -82,13 +82,13 @@ class GameplayChangersSubstate extends MusicBeatSubstate
 		option.displayFormat = '%vX';
 		optionsArray.push(option);
 
-		var option:GameplayOption = new GameplayOption('Instakill on Miss', 'instakill', 'bool', false);
+		var option:GameplayOption = new GameplayOption('Instakill on Miss', 'instakill', 'bool', false); // even a single miss = death
 		optionsArray.push(option);
 
-		var option:GameplayOption = new GameplayOption('Practice Mode', 'practice', 'bool', false);
+		var option:GameplayOption = new GameplayOption('Practice Mode', 'practice', 'bool', false); // practice lol
 		optionsArray.push(option);
 
-		var option:GameplayOption = new GameplayOption('Botplay', 'botplay', 'bool', false);
+		var option:GameplayOption = new GameplayOption('Botplay', 'botplay', 'bool', false); // let a cpu play for you
 		optionsArray.push(option);
 	}
 

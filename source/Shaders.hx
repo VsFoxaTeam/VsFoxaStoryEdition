@@ -946,7 +946,7 @@ void main()
 	}
 }
 
-/*STOLE FROM DAVE AND BAMBI
+/** STOLEN FROM DAVE AND BAMBI
 
 	I LOVE BANUUU I LOVE BANUUU
 	  ________
@@ -960,8 +960,9 @@ void main()
 	  |   |  |
 	  |___|__|
 		
+	  NOOOOO THE FORMATTING BROKE BANUUUUUUU WAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 
- */
+**/
 class GlitchEffect extends Effect
 {
 	public var shader:GlitchShader = new GlitchShader();

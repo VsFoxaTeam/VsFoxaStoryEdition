@@ -178,9 +178,9 @@ class ClientPrefs
 			flashing = FlxG.save.data.flashing;
 		}
 		if (FlxG.save.data.botplaySine != null)
-			{
+		{
 				botplaySine = FlxG.save.data.botplaySine;
-			}
+		}
 		if (FlxG.save.data.globalAntialiasing != null)
 		{
 			globalAntialiasing = FlxG.save.data.globalAntialiasing;

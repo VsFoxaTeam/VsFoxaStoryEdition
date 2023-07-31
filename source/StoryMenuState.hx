@@ -170,7 +170,7 @@ class StoryMenuState extends MusicBeatState
 		txtTracklist.font = rankText.font;
 		txtTracklist.color = 0xFFe55777;
 		add(txtTracklist);
-		// add(rankText);
+
 		add(scoreText);
 		add(txtWeekTitle);
 
