@@ -1080,7 +1080,7 @@ class PlayState extends MusicBeatState
 		botplayTxt = new FlxText(400, timeBarBG.y + 55, FlxG.width - 800, "BOTPLAY", 32);
 		botplayTxt.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		botplayTxt.scrollFactor.set();
-		botplayTxt.borderSize = 1.25;
+		botplayTxt.borderSize = 2;
 		botplayTxt.visible = cpuControlled;
 		add(botplayTxt);
 		if (ClientPrefs.downScroll)
@@ -1213,7 +1213,9 @@ class PlayState extends MusicBeatState
 
 		// PRECACHING MISS SOUNDS BECAUSE I THINK THEY CAN LAG PEOPLE AND FUCK THEM UP IDK HOW HAXE WORKS
 		if (ClientPrefs.hitsoundVolume > 0)
+		{
 			CoolUtil.precacheSound('ChartingTick');
+		}
 		CoolUtil.precacheSound('missnote1');
 		CoolUtil.precacheSound('missnote2');
 		CoolUtil.precacheSound('missnote3');
@@ -1356,7 +1358,9 @@ class PlayState extends MusicBeatState
 			for (lua in luaArray)
 			{
 				if (lua.scriptName == luaFile)
+				{
 					return;
+				}
 			}
 			luaArray.push(new FunkinLua(luaFile));
 		}
@@ -1536,7 +1540,9 @@ class PlayState extends MusicBeatState
 	{
 		// TO DO: Make this more flexible, maybe?
 		if (psychDialogue != null)
+		{
 			return;
+		}
 
 		if (dialogueFile.dialogue.length > 0)
 		{
@@ -2520,7 +2526,7 @@ override public function update(elapsed:Float)
 				}
 			}
 		}
-		
+
 		if (controls.PAUSE && startedCountdown && canPause)
 		{
 			var ret:Dynamic = callOnLuas('onPause', []);
