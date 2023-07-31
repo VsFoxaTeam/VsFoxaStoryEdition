@@ -47,6 +47,9 @@ class VisualsUISubState extends BaseOptionsMenu
 		var option:Option = new Option('Flashing Lights', "Uncheck this if you're sensitive to flashing lights,\nespecially Blammed Lights!", 'flashing', 'bool', true);
 		addOption(option);
 
+		var option:Option = new Option('Botplay Sine Effect', "If checked, the botplay text in-game does that one sine effect\nwhile the song is being played and when Botplay is on.", 'botplaySine', 'bool', true);
+		addOption(option);
+
 		var option:Option = new Option('Camera Zooms', "If unchecked, the camera won't zoom in on a beat hit.", 'camZooms', 'bool', true);
 		addOption(option);
 

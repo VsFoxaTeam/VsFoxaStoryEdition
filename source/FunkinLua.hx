@@ -221,6 +221,7 @@ class FunkinLua
 		{
 			if (pauseGame)
 			{
+				FlxG.camera.followLerp = 0;
 				PlayState.instance.persistentUpdate = false;
 				PlayState.instance.persistentDraw = true;
 				PlayState.instance.paused = true;

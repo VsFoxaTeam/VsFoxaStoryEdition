@@ -24,6 +24,7 @@ class ClientPrefs
 	public static var camZooms:Bool = true;
 	public static var hitsoundVolume:Float = 0;
 	public static var hideHud:Bool = false;
+	public static var botplaySine:Bool = true;
 	public static var noteOffset:Int = 0;
 	public static var arrowHSV:Array<Array<Int>> = [[0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0]];
 	public static var imagesPersist:Bool = false;
@@ -113,6 +114,7 @@ class ClientPrefs
 		FlxG.save.data.hitsoundVolume = hitsoundVolume;
 		FlxG.save.data.hideHud = hideHud;
 		FlxG.save.data.arrowHSV = arrowHSV;
+		FlxG.save.data.botplaySine = botplaySine;
 		FlxG.save.data.imagesPersist = imagesPersist;
 		FlxG.save.data.ghostTapping = ghostTapping;
 		FlxG.save.data.timeBarType = timeBarType;
@@ -175,6 +177,10 @@ class ClientPrefs
 		{
 			flashing = FlxG.save.data.flashing;
 		}
+		if (FlxG.save.data.botplaySine != null)
+			{
+				botplaySine = FlxG.save.data.botplaySine;
+			}
 		if (FlxG.save.data.globalAntialiasing != null)
 		{
 			globalAntialiasing = FlxG.save.data.globalAntialiasing;
