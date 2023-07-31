@@ -87,7 +87,91 @@ class CreditsState extends MusicBeatState
 		#end
 
 		var pisspoop:Array<Array<String>> = [
-			// Name - Icon name - Description - Link - BG Color
+			// Name - Icon name - Description - Link (if you dont have a link, use 'nolink' instead lol) - BG Color
+			['Vs. Foxa Team'],
+			[
+				'Foxa',
+				'foxa',
+				'Also known as Hayz and Foxa The Artist - Main Director, Artist, Animator, and Composer of Vs. Foxa',
+				'https://www.youtube.com/channel/UCu0cMjmyVBgUXSieMwbqyjA',
+				'EEABFC'
+			],
+			[
+				'CharlesCatYT',
+				'charles',
+				'Also known as Kooker and Milky - Main Programmer and Composer of Vs. Foxa',
+				'https://github.com/CharlesCatYT',
+				'1CBFCD'
+			],
+			[
+				'Darkness Light',
+				'dark',
+				'Main Dialogue Helper and Charter of Vs. Foxa',
+				'nolink',
+				'8600CE'
+			],
+			[
+				'TheAnimateMan',
+				'animate',
+				'Artist & Animator of Vs. Foxa',
+				'https://www.youtube.com/@TheAnimateMan0',
+				'ff3333'
+			],
+			[
+				'Pico69',
+				'missing_icon',
+				'Also known as waffles_1 - Artist of Vs. Foxa',
+				'nolink',
+				'ACACAC'
+			],
+			[''],
+			['Former Vs. Foxa Members'],
+			[
+				'FellowIdiot',
+				'fbi',
+				'Also known as FBI Agent - Ex-Programmer and Ex-Charter of Vs. Foxa',
+				'https://twitter.com/bbsub3',
+				'ACACAC'
+			],
+			[
+				'Natsuki',
+				'missing_icon',
+				'Also known as Monomouse - Ex-Programmer of Vs. Foxa',
+				'https://twitter.com/bbsub3',
+				'ACACAC'
+			],
+			['Assmaster', 'missing_icon', 'Ex-Charter of Vs. Foxa', 'nolink', 'ACACAC'],
+			[''],
+			['Vs. Whitty Team'],
+			[
+				'sockdotclip',
+				'missing_icon',
+				'Director of Vs. Whitty',
+				'https://twitter.com/yoshubs',
+				'ACACAC'
+			],
+			[
+				'NateAnim8',
+				'missing_icon',
+				'Additional Director of Vs. Whitty',
+				'https://twitter.com/yoshubs',
+				'ACACAC'
+			],
+			[
+				'bb-panzu',
+				'bb-panzu',
+				'Composer of Vs. Whitty',
+				'https://twitter.com/bbsub3',
+				'389A58'
+			],
+			[
+				'KadeDev',
+				'kade',
+				'Programmer of Vs. Whitty',
+				'https://twitter.com/bbsub3',
+				'64A250'
+			],
+			[''],
 			['Psych Engine Team'],
 			[
 				'Shadow Mario',
@@ -115,7 +199,7 @@ class CreditsState extends MusicBeatState
 			[
 				'shubs',
 				'shubs',
-				'(Now known as CubicYoshi) Additional Ex-Programmer of Psych Engine',
+				'Also known as CubicYoshi - Additional Ex-Programmer of Psych Engine',
 				'https://twitter.com/yoshubs',
 				'279ADC'
 			],
@@ -128,13 +212,19 @@ class CreditsState extends MusicBeatState
 				'https://twitter.com/flicky_i',
 				'AA32FE'
 			],
-			['MemeHoovy', 'hoovy', 'Some code', 'https://github.com/MemeHovy', 'AA32FE'],
+			[
+				'MemeHoovy',
+				'missing_icon',
+				'Some code',
+				'https://github.com/MemeHovy',
+				'ACACAC'
+			],
 			[
 				'GSDrunkestDriver',
-				'drunkest',
+				'missing_icon',
 				'Buttplug Support',
 				'https://github.com/GsDrunkestDriver/',
-				'AA32FE'
+				'ACACAC'
 			],
 			[
 				'SqirraRNG',
