@@ -206,15 +206,6 @@ class TitleState extends MusicBeatState
 	{
 		if (!initialized)
 		{
-			// HAD TO MODIFY SOME BACKEND SHIT
-			// IF THIS PR IS HERE IF ITS ACCEPTED UR GOOD TO GO
-			// https://github.com/HaxeFlixel/flixel-addons/pull/348
-
-			// var music:FlxSound = new FlxSound();
-			// music.loadStream(Paths.music('freakyMenu'));
-			// FlxG.sound.list.add(music);
-			// music.play();
-
 			if (FlxG.sound.music == null)
 			{
 				FlxG.sound.playMusic(Paths.music('freakyMenu'), 0);
@@ -262,12 +253,10 @@ class TitleState extends MusicBeatState
 		titleText = new FlxSprite(titleJSON.startx, titleJSON.starty);
 		#if (desktop && MODS_ALLOWED)
 		var path = "mods/" + Paths.currentModDirectory + "/images/titleEnter.png";
-		// trace(path, FileSystem.exists(path));
 		if (!FileSystem.exists(path))
 		{
 			path = "mods/images/titleEnter.png";
 		}
-		// trace(path, FileSystem.exists(path));
 		if (!FileSystem.exists(path))
 		{
 			path = "assets/images/titleEnter.png";
@@ -314,9 +303,13 @@ class TitleState extends MusicBeatState
 		FlxTween.tween(credTextShit, {y: credTextShit.y + 20}, 2.9, {ease: FlxEase.quadInOut, type: PINGPONG});
 
 		if (initialized)
+		{
 			skipIntro();
+		}
 		else
+		{
 			initialized = true;
+		}
 	}
 
 	function getIntroTextShit():Array<Array<String>>
@@ -373,7 +366,9 @@ class TitleState extends MusicBeatState
 			if (pressedEnter)
 			{
 				if (titleText != null)
+				{
 					titleText.animation.play('press');
+				}
 
 				FlxG.camera.flash(FlxColor.WHITE, 1);
 				FlxG.sound.play(Paths.sound('confirmMenu'), 0.7);
