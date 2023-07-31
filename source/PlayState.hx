@@ -2958,8 +2958,6 @@ override public function update(elapsed:Float)
 				openSubState(new GameOverSubstate(boyfriend.getScreenPosition().x - boyfriend.positionArray[0],
 					boyfriend.getScreenPosition().y - boyfriend.positionArray[1], camFollowPos.x, camFollowPos.y));
 
-				// MusicBeatState.switchState(new GameOverState(boyfriend.getScreenPosition().x, boyfriend.getScreenPosition().y));
-
 				#if desktop
 				// Game Over doesn't get his own variable because it's only used here
 				DiscordClient.changePresence("Game Over - " + detailsText, SONG.song + " (" + storyDifficultyText + ")", iconP2.getCharacter());
@@ -3612,12 +3610,10 @@ override public function update(elapsed:Float)
 		{
 			if (SONG.validScore)
 			{
-				#if !switch
 				var percent:Float = Highscore.floorDecimal(ratingPercent * 100, 2);
 				if (Math.isNaN(percent))
 					percent = 0;
 				Highscore.saveScore(SONG.song, songScore, storyDifficulty, percent);
-				#end
 			}
 
 			if (chartingMode)

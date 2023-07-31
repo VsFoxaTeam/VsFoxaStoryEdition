@@ -366,9 +366,7 @@ class StoryMenuState extends MusicBeatState
 		}
 		lastDifficultyName = diff;
 
-		#if !switch
 		intendedScore = Highscore.getWeekScore(WeekData.weeksList[curWeek], curDifficulty);
-		#end
 	}
 
 	var lerpScore:Int = 0;
@@ -493,8 +491,6 @@ class StoryMenuState extends MusicBeatState
 		txtTracklist.screenCenter(X);
 		txtTracklist.x -= FlxG.width * 0.35;
 
-		#if !switch
 		intendedScore = Highscore.getWeekScore(WeekData.weeksList[curWeek], curDifficulty);
-		#end
 	}
 }
