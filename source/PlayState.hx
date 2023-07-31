@@ -2511,15 +2511,16 @@ override public function update(elapsed:Float)
 				+ Highscore.floorDecimal(ratingPercent * 100, 2) + '%)' + ' - ' + ratingFC; // peeps wanted no integer rating
 		}
 
-		if (ClientPrefs.botplaySine)
-		{
-			if (botplayTxt.visible)
+		if (botplayTxt.visible)
 			{
-				botplaySine += 180 * elapsed;
-				botplayTxt.alpha = 1 - Math.sin((Math.PI * botplaySine) / 180);
+				if (ClientPrefs.botplaySine)
+				{
+					botplaySine += 180 * elapsed;
+					botplayTxt.alpha = 1 - Math.sin((Math.PI * botplaySine) / 180);
+				}
 			}
 		}
-
+		
 		if (controls.PAUSE && startedCountdown && canPause)
 		{
 			var ret:Dynamic = callOnLuas('onPause', []);
